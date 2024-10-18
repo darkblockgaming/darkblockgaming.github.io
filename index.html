@@ -26,9 +26,14 @@
         }
 
         header img {
-            max-width: 80px; /* Make the logo smaller */
+            max-width: 80px; /* Size for the logo */
             height: auto;
-            margin-right: 15px; /* Space between logo and title */
+        }
+
+        header .menu-icon {
+            max-width: 80px; /* Same size for the menu icon */
+            height: auto; /* Maintain aspect ratio */
+            cursor: pointer; /* Change cursor to pointer on hover */
         }
 
         header h1 {
@@ -37,12 +42,6 @@
             text-align: center; /* Align text to the left */
             flex-grow: 1; /* Allow title to take remaining space */
             white-space: nowrap; /* Prevent text from wrapping */
-        }
-
-        header .menu-icon {
-            max-width: 40px; /* Set size for the menu icon */
-            height: auto; /* Maintain aspect ratio */
-            cursor: pointer; /* Change cursor to pointer on hover */
         }
 
         section {
@@ -99,6 +98,10 @@
                 margin-top: 0; /* Remove any top margin */
                 text-align: left;
                 white-space: nowrap; /* Prevent text from wrapping */
+            }
+
+            header .menu-icon {
+                max-width: 50px; /* Make menu icon smaller on mobile */
             }
         }
     </style>
