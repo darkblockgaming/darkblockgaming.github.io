@@ -3,81 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DarkBlock Gaming</title>
+    <meta name="description" content="Minecraft Bedrock Edition Addons by DarkBlock Gaming">
+    <title>DarkBlock Gaming - Minecraft Bedrock Edition Addons</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
         }
+
         header {
             background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
+            color: #fff;
+            padding: 20px 0;
         }
-        nav {
-            text-align: center;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        section h2 {
+            font-size: 2rem;
             margin-bottom: 20px;
         }
-        nav a {
-            margin: 0 15px;
+
+        .addon-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .addon-list li {
+            background-color: #fff;
+            margin: 10px auto;
+            padding: 20px;
+            max-width: 600px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .addon-list li a {
             color: #007BFF;
             text-decoration: none;
         }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        .addon-list li a:hover {
+            text-decoration: underline;
         }
-        h2 {
-            color: #333;
-        }
+
         footer {
             background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>DarkBlock Gaming</h1>
+        <nav>
+            <a href="#addons">Addons</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
 
-<header>
-    <h1>DarkBlock Gaming</h1>
-</header>
+    <section id="addons">
+        <h2>My Minecraft Bedrock Edition Addons</h2>
+        <ul class="addon-list">
+            <li>
+                <h3>Addon Name 1</h3>
+                <p>Description of Addon 1. <a href="https://example.com/addon1" target="_blank">Download Here</a></p>
+            </li>
+            <li>
+                <h3>Addon Name 2</h3>
+                <p>Description of Addon 2. <a href="https://example.com/addon2" target="_blank">Download Here</a></p>
+            </li>
+            <!-- Add more addons as needed -->
+        </ul>
+    </section>
 
-<nav>
-    <a href="#projects">Projects</a>
-    <a href="#posts">Posts</a>
-    <a href="#about">About Me</a>
-</nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm DarkBlock Gaming, and I create addons for Minecraft Bedrock Edition. Check out my work and feel free to reach out if you'd like to collaborate.</p>
+    </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="https://example.com/addon1" target="_blank">Addon 1</a> - Description of Addon 1</li>
-        <li><a href="https://example.com/addon2" target="_blank">Addon 2</a> - Description of Addon 2</li>
-    </ul>
-</section>
-
-<section id="posts">
-    <h2>Posts</h2>
-    <p>No posts yet!</p>
-</section>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>I'm DarkBlock Gaming, creating Minecraft Bedrock Edition addons.</p>
-</section>
-
-<footer>
-    <p>&copy; 2024 DarkBlock Gaming</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2024 DarkBlock Gaming. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
