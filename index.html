@@ -7,10 +7,17 @@
     <title>DarkBlock Gaming - Minecraft Bedrock Edition Addons</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Load the custom font */
+        /* Load the custom fonts */
         @font-face {
             font-family: 'MinecraftTen';
             src: url('fonts/minecraft-ten.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'MinecraftSeven';
+            src: url('fonts/Minecraft-Seven-66398.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
         }
@@ -25,9 +32,14 @@
             overflow-x: hidden;
         }
 
-        /* Apply custom font only to section headings */
+        /* Apply MinecraftSeven font to the main paragraph text */
+        p {
+            font-family: 'MinecraftSeven', sans-serif;
+        }
+
+        /* Apply MinecraftTen font only to section headings */
         section h2 {
-            font-family: 'MinecraftTen', sans-serif; /* Use the custom Minecraft font */
+            font-family: 'MinecraftTen', sans-serif;
         }
 
         header {
@@ -86,13 +98,13 @@
             margin-bottom: 15px;
         }
 
-        /* Add border-radius for curvy images */
+        /* Curvy image corners */
         .addon-list li img {
             width: 100%;
             height: auto;
             max-width: 600px;
             margin: 10px 0;
-            border-radius: 20px; /* This makes the image corners curvy */
+            border-radius: 20px;
         }
 
         .addon-list li .download-btn {
