@@ -18,18 +18,23 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px 0;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         header img {
             max-width: 150px;
             height: auto;
-            margin-bottom: 10px;
+            margin-right: 20px;
         }
 
         header h1 {
             margin: 0;
             font-size: 2.5rem;
+            text-align: right;
+            flex-grow: 1;
         }
 
         nav a {
@@ -60,6 +65,15 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
+        .addon-list li a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .addon-list li a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -70,7 +84,7 @@
 </head>
 <body>
     <header>
-        <!-- Assuming logo.png is in the same directory as index.html -->
+        <!-- Logo moved to the top left -->
         <img src="logo.png" alt="[Your Name] Logo">
         <h1>[Your Name]</h1>
         <nav>
@@ -84,13 +98,13 @@
         <ul class="addon-list">
             <li>
                 <h3>Addon Name 1</h3>
-                <p>Description of Addon 1. [Download Link]</p>
+                <p>Description of Addon 1. <a href="https://example.com/download1" target="_blank">Download</a></p>
             </li>
             <li>
                 <h3>Addon Name 2</h3>
-                <p>Description of Addon 2. [Download Link]</p>
+                <p>Description of Addon 2. <a href="https://example.com/download2" target="_blank">Download</a></p>
             </li>
-            <!-- Add more addons as needed -->
+            <!-- Add more addons with actual download links as needed -->
         </ul>
     </section>
 
