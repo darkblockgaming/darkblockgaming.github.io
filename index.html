@@ -18,24 +18,24 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px;
+            padding: 10px 20px; /* Reduced padding for a smaller header height */
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            align-items: center; /* Align items vertically */
+            justify-content: space-between; /* Space between logo and title */
             flex-wrap: nowrap; /* Prevent wrapping */
         }
 
         header img {
-            max-width: 256px;
+            max-width: 80px; /* Make the logo smaller */
             height: auto;
-            margin-right: 20px;
+            margin-right: 15px; /* Space between logo and title */
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            text-align: right;
-            flex-grow: 1;
+            font-size: 2rem; /* Slightly smaller font size */
+            text-align: left; /* Align text to the left */
+            flex-grow: 1; /* Allow title to take remaining space */
             white-space: nowrap; /* Prevent text from wrapping */
         }
 
@@ -87,17 +87,17 @@
         @media (max-width: 768px) {
             header {
                 flex-direction: column; /* Stack items vertically */
-                align-items: center;    /* Center align */
+                align-items: flex-start; /* Align items to the left */
             }
 
             header img {
-                max-width: 100px; /* Make the logo smaller on mobile */
+                max-width: 50px; /* Make the logo even smaller on mobile */
             }
 
             header h1 {
-                font-size: 1.8rem; /* Adjust font size for mobile */
-                margin-top: 10px;   /* Add some spacing */
-                text-align: center;
+                font-size: 1.5rem; /* Adjust font size for mobile */
+                margin-top: 5px; /* Add some spacing */
+                text-align: left;
             }
         }
     </style>
