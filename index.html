@@ -13,7 +13,7 @@
             background-color: #f4f4f4;
             color: #333;
             text-align: center;
-            overflow-x: hidden; /* Prevent horizontal scroll when menu is open */
+            overflow-x: hidden;
         }
 
         header {
@@ -104,10 +104,26 @@
             margin-top: 50px;
         }
 
+        footer .social-media {
+            margin-top: 15px;
+        }
+
+        footer .social-media a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-media a:hover {
+            color: #e74c3c;
+        }
+
         /* Side menu styling */
         .side-menu {
             height: 100%;
-            width: 0; /* Initially hidden */
+            width: 0;
             position: fixed;
             top: 0;
             right: 0;
@@ -160,6 +176,8 @@
             }
         }
     </style>
+    <!-- Font Awesome for social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -201,6 +219,12 @@
 
     <footer>
         <p>&copy; 2024 DarkBlock Gaming. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://youtube.com" target="_blank" class="fab fa-youtube"></a>
+        </div>
     </footer>
 
     <script>
