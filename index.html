@@ -39,10 +39,10 @@
             white-space: nowrap; /* Prevent text from wrapping */
         }
 
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
+        header .menu-icon {
+            max-width: 40px; /* Set size for the menu icon */
+            height: auto; /* Maintain aspect ratio */
+            cursor: pointer; /* Change cursor to pointer on hover */
         }
 
         section {
@@ -107,10 +107,7 @@
     <header>
         <img src="logo.png" alt="DarkBlock Gaming Logo">
         <h1>DarkBlock Gaming</h1>
-        <nav>
-            <a href="#addons">Addons</a>
-            <a href="#about">About</a>
-        </nav>
+        <img src="img1.png" alt="Menu Icon" class="menu-icon" onclick="toggleMenu()">
     </header>
 
     <section id="addons">
@@ -135,5 +132,12 @@
     <footer>
         <p>&copy; 2024 DarkBlock Gaming. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            // Implement your menu toggle logic here
+            alert("Menu toggled!"); // Placeholder action for the menu
+        }
+    </script>
 </body>
 </html>
