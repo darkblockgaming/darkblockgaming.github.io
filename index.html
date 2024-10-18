@@ -18,30 +18,30 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 20px; /* Reduced padding for a smaller header height */
+            padding: 10px 20px;
             display: flex;
-            align-items: center; /* Align items vertically */
-            justify-content: space-between; /* Space between logo and title */
-            flex-wrap: nowrap; /* Prevent wrapping */
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
         }
 
         header img {
-            max-width: 80px; /* Size for the logo */
+            max-width: 80px;
             height: auto;
         }
 
         header .menu-icon {
-            max-width: 80px; /* Same size for the menu icon */
-            height: auto; /* Maintain aspect ratio */
-            cursor: pointer; /* Change cursor to pointer on hover */
+            max-width: 80px;
+            height: auto;
+            cursor: pointer;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2rem; /* Slightly smaller font size */
-            text-align: center; /* Align text to the left */
-            flex-grow: 1; /* Allow title to take remaining space */
-            white-space: nowrap; /* Prevent text from wrapping */
+            font-size: 2rem;
+            text-align: center;
+            flex-grow: 1;
+            white-space: nowrap;
         }
 
         section {
@@ -64,6 +64,7 @@
             padding: 20px;
             max-width: 600px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 15px; /* Rounded corners */
         }
 
         .addon-list li a {
@@ -85,23 +86,23 @@
         /* Media query for mobile devices */
         @media (max-width: 768px) {
             header {
-                flex-direction: row; /* Ensure items are in a row */
-                align-items: center; /* Align items to center vertically */
+                flex-direction: row;
+                align-items: center;
             }
 
             header img {
-                max-width: 50px; /* Make the logo even smaller on mobile */
+                max-width: 50px;
             }
 
             header h1 {
-                font-size: 1.5rem; /* Adjust font size for mobile */
-                margin-top: 0; /* Remove any top margin */
+                font-size: 1.5rem;
+                margin-top: 0;
                 text-align: center;
-                white-space: nowrap; /* Prevent text from wrapping */
+                white-space: nowrap;
             }
 
             header .menu-icon {
-                max-width: 50px; /* Make menu icon smaller on mobile */
+                max-width: 50px;
             }
         }
     </style>
@@ -138,8 +139,7 @@
 
     <script>
         function toggleMenu() {
-            // Implement your menu toggle logic here
-            alert("Menu toggled!"); // Placeholder action for the menu
+            alert("Menu toggled!");
         }
     </script>
 </body>
