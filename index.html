@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Minecraft Bedrock Edition Addons by [Your Name]">
-    <title>[Your Name] - Minecraft Bedrock Edition Addons</title>
+    <meta name="description" content="Minecraft Bedrock Edition Addons by DarkBlock Gaming">
+    <title>DarkBlock Gaming - Minecraft Bedrock Edition Addons</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,10 +22,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: nowrap; /* Prevent wrapping */
         }
 
         header img {
-            max-width: 150px;
+            max-width: 256px;
             height: auto;
             margin-right: 20px;
         }
@@ -35,6 +36,7 @@
             font-size: 2.5rem;
             text-align: right;
             flex-grow: 1;
+            white-space: nowrap; /* Prevent text from wrapping */
         }
 
         nav a {
@@ -80,13 +82,30 @@
             padding: 20px 0;
             margin-top: 50px;
         }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center;    /* Center align */
+            }
+
+            header img {
+                max-width: 100px; /* Make the logo smaller on mobile */
+            }
+
+            header h1 {
+                font-size: 1.8rem; /* Adjust font size for mobile */
+                margin-top: 10px;   /* Add some spacing */
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- Logo moved to the top left -->
-        <img src="logo.png" alt="[Your Name] Logo">
-        <h1>[Your Name]</h1>
+        <img src="logo.png" alt="DarkBlock Gaming Logo">
+        <h1>DarkBlock Gaming</h1>
         <nav>
             <a href="#addons">Addons</a>
             <a href="#about">About</a>
@@ -104,7 +123,6 @@
                 <h3>Addon Name 2</h3>
                 <p>Description of Addon 2. <a href="https://example.com/download2" target="_blank">Download</a></p>
             </li>
-            <!-- Add more addons with actual download links as needed -->
         </ul>
     </section>
 
@@ -114,7 +132,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+        <p>&copy; 2024 DarkBlock Gaming. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
