@@ -71,6 +71,13 @@
             margin-bottom: 15px;
         }
 
+        .addon-list li img {
+            width: 100%; /* Full width of the container */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 600px; /* Ensure the image doesn’t get larger than the container */
+            margin: 10px 0;
+        }
+
         .addon-list li .download-btn {
             display: inline-block;
             background-color: #e74c3c;
@@ -78,7 +85,7 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.1s ease; /* Animation transition */
+            transition: background-color 0.3s ease, transform 0.1s ease;
         }
 
         .addon-list li .download-btn:hover {
@@ -86,7 +93,7 @@
         }
 
         .addon-list li .download-btn:active {
-            transform: scale(0.95); /* Slight shrink on click */
+            transform: scale(0.95);
         }
 
         footer {
@@ -117,6 +124,10 @@
             header .menu-icon {
                 max-width: 50px;
             }
+
+            .addon-list li img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -133,11 +144,13 @@
             <li>
                 <h3>Addon Name 1</h3>
                 <p>Description of Addon 1.</p>
+                <img src="addon-image1.jpg" alt="Addon Image 1"> <!-- 16:9 image goes here -->
                 <a href="https://example.com/download1" target="_blank" class="download-btn">Download</a>
             </li>
             <li>
                 <h3>Addon Name 2</h3>
                 <p>Description of Addon 2.</p>
+                <img src="addon-image2.jpg" alt="Addon Image 2"> <!-- 16:9 image goes here -->
                 <a href="https://example.com/download2" target="_blank" class="download-btn">Download</a>
             </li>
         </ul>
