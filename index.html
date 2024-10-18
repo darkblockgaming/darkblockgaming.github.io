@@ -86,8 +86,8 @@
         /* Media query for mobile devices */
         @media (max-width: 768px) {
             header {
-                flex-direction: column; /* Stack items vertically */
-                align-items: flex-start; /* Align items to the left */
+                flex-direction: row; /* Ensure items are in a row */
+                align-items: center; /* Align items to center vertically */
             }
 
             header img {
@@ -96,8 +96,9 @@
 
             header h1 {
                 font-size: 1.5rem; /* Adjust font size for mobile */
-                margin-top: 5px; /* Add some spacing */
+                margin-top: 0; /* Remove any top margin */
                 text-align: left;
+                white-space: nowrap; /* Prevent text from wrapping */
             }
         }
     </style>
