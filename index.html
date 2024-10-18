@@ -7,6 +7,14 @@
     <title>DarkBlock Gaming - Minecraft Bedrock Edition Addons</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* Load the custom font */
+        @font-face {
+            font-family: 'MinecraftTen';
+            src: url('fonts/minecraft-ten.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -15,6 +23,11 @@
             color: #333;
             text-align: center;
             overflow-x: hidden;
+        }
+
+        /* Apply custom font to header and headings */
+        header h1, section h2 {
+            font-family: 'MinecraftTen', sans-serif; /* Use the custom Minecraft font */
         }
 
         header {
@@ -224,7 +237,7 @@
         <p>&copy; 2024 DarkBlock Gaming. All Rights Reserved.</p>
         <div class="social-icons">
             <a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a>
-            <a href="https://x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
