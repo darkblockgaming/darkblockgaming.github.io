@@ -24,7 +24,6 @@
             color: #333;
             text-align: center;
             overflow-x: hidden;
-            font-size: 1rem; /* Use rem for base font size */
         }
 
         /* Apply custom font only to section headings */
@@ -35,7 +34,7 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 1rem 2rem; /* Relative padding */
+            padding: 1.5vw 2vw; /* Changed to vw */
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -43,31 +42,31 @@
         }
 
         header img {
-            max-width: 5rem; /* Adjusted from fixed size */
+            max-width: 80px;
             height: auto;
         }
 
         header .menu-icon {
-            max-width: 5rem;
+            max-width: 80px;
             height: auto;
             cursor: pointer;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2rem; /* Adjust to relative units */
+            font-size: 3vw; /* Changed to vw */
             text-align: center;
             flex-grow: 1;
             white-space: nowrap;
         }
 
         section {
-            padding: 5vh 5vw; /* Use viewport units for scaling */
+            padding: 5vw; /* Changed to vw */
         }
 
         section h2 {
-            font-size: 2rem;
-            margin-bottom: 1.25rem;
+            font-size: 3vw; /* Changed to vw */
+            margin-bottom: 2vw; /* Changed to vw */
         }
 
         .addon-list {
@@ -77,41 +76,42 @@
 
         .addon-list li {
             background-color: #fff;
-            margin: 1rem auto;
-            padding: 2rem;
-            max-width: 90vw; /* Adjust for larger screens */
+            margin: 1vw auto; /* Changed to vw */
+            padding: 2vw; /* Changed to vw */
+            max-width: 600px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 1rem;
-            text-align: center;
+            border-radius: 15px;
+            text-align: center; /* Center the name and download button */
         }
 
         .addon-list li h3 {
             margin-top: 0;
-            font-size: 1.5rem;
+            font-size: 2vw; /* Changed to vw */
         }
 
         .addon-list li p {
-            margin-bottom: 1rem;
-            text-align: left;
-            font-size: 0.9rem;
-            line-height: 1.5;
+            margin-bottom: 1.5vw; /* Changed to vw */
+            text-align: left; /* Align text to the left */
+            font-size: 1vw; /* Changed to vw */
+            line-height: 1.5; /* Improve readability */
         }
 
+        /* Add border-radius for curvy images */
         .addon-list li img {
             width: 100%;
             height: auto;
-            max-width: 90vw;
-            margin: 0.5rem 0;
-            border-radius: 1.25rem;
+            max-width: 600px;
+            margin: 1vw 0; /* Changed to vw */
+            border-radius: 20px; /* This makes the image corners curvy */
         }
 
         .addon-list li .download-btn {
             display: inline-block;
             background-color: #e74c3c;
             color: #fff;
-            padding: 0.625rem 1.25rem; /* Relative padding */
+            padding: 1vw 2vw; /* Changed to vw */
             text-decoration: none;
-            border-radius: 0.25rem;
+            border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.1s ease;
         }
 
@@ -126,22 +126,23 @@
         footer {
             background-color: #333;
             color: #fff;
-            padding: 2rem 0;
-            margin-top: 5vh;
+            padding: 2vw 0; /* Changed to vw */
+            margin-top: 5vw; /* Changed to vw */
         }
 
         footer p {
             margin: 0;
+            font-size: 1.5vw; /* Changed to vw */
         }
 
         .social-icons {
-            margin-top: 0.625rem;
+            margin-top: 1vw; /* Changed to vw */
         }
 
         .social-icons a {
             color: #fff;
-            font-size: 1.5rem;
-            margin: 0 0.625rem;
+            font-size: 3vw; /* Changed to vw */
+            margin: 0 1vw; /* Changed to vw */
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -160,13 +161,13 @@
             background-color: #333;
             overflow-x: hidden;
             transition: 0.5s;
-            padding-top: 5rem;
+            padding-top: 6vw; /* Changed to vw */
         }
 
         .side-menu a {
-            padding: 0.5rem 2rem;
+            padding: 1vw 1vw 1vw 3vw; /* Changed to vw */
             text-decoration: none;
-            font-size: 1.5625rem; /* Relative font size */
+            font-size: 2vw; /* Changed to vw */
             color: #fff;
             display: block;
             transition: 0.3s;
@@ -178,27 +179,27 @@
 
         .side-menu .close-btn {
             position: absolute;
-            top: 0.625rem;
-            right: 1.5625rem;
-            font-size: 2.25rem;
+            top: 1vw; /* Changed to vw */
+            right: 2vw; /* Changed to vw */
+            font-size: 3vw; /* Changed to vw */
             cursor: pointer;
         }
 
         /* Media query for mobile devices */
         @media (max-width: 768px) {
             header img {
-                max-width: 3rem;
+                max-width: 50px;
             }
 
             header h1 {
-                font-size: 1.5rem;
+                font-size: 5vw; /* Changed to vw */
                 margin-top: 0;
                 text-align: center;
                 white-space: nowrap;
             }
 
             header .menu-icon {
-                max-width: 3rem;
+                max-width: 50px;
             }
 
             .addon-list li img {
@@ -253,13 +254,12 @@
             <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="mailto:contact.darkblock.gaming@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </footer>
 
     <script>
         function openMenu() {
-            document.getElementById("sideMenu").style.width = "15rem"; /* Use rem for consistent scaling */
+            document.getElementById("sideMenu").style.width = "250px";
         }
 
         function closeMenu() {
