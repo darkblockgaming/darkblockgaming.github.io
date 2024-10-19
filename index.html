@@ -372,7 +372,8 @@
 
     // Loop through all info buttons and add click event to each
     infoButtons.forEach(function(button) {
-        button.onclick = function() {
+        button.onclick = function(event) {
+            event.preventDefault(); // Prevent scrolling to top
             modal.style.display = "block";
         };
     });
