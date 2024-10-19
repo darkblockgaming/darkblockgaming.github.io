@@ -181,6 +181,9 @@
     visibility: hidden;
     opacity: 0;            /* Start invisible */
     transition: visibility 0s, opacity 0.5s ease; /* Transition effect */
+    display: flex;         /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
 }
 
 .modal-show {
@@ -190,7 +193,6 @@
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
