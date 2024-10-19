@@ -170,7 +170,6 @@
         
         /* Popup Modal Styles */
 .modal {
-    display: none; 
     position: fixed;
     z-index: 1000; 
     left: 0;
@@ -179,6 +178,11 @@
     height: 100%;
     overflow: auto; 
     background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+}
+
+.modal-show {
+	visibility: visible;
 }
 
 .modal-content {
@@ -315,13 +319,13 @@
                 <h3>Player Spectator</h3>
                 <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
                 <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
-                <button class="knowmore-btn">
+                <button class="knowmore-btn" onClick="openPopup()">
                     <i class="fa fa-info-circle"></i> Info
                 </button>
                 
                 <div id="infoPopup" class="modal">
                     <div class="modal-content">
-                        <span class="close">&times;</span>
+                        <span class="close" onClick="closePopup()">&times;</span>
                         <h2>Addon Information</h2>
                         <p><strong>Supported Version:</strong> 1.19+</p>
                         <p><strong>Pack Type:</strong> Resource/Behavior</p>
@@ -360,7 +364,17 @@
     function closeMenu() {
         document.getElementById("sideMenu").style.width = "0";
     }
-
+    
+    let infoPopup = document.getElementById("infoPopup");
+    
+    function openPopup() {
+    	infoPopup.classList.add("modal-show");
+    }
+    
+    function closePopup() {
+    	infoPopup.classList.remove("modal-show");
+    }
+    
 </script>
     
     
