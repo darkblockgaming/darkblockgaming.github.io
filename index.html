@@ -34,7 +34,7 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 1.5vw 2vw; /* Changed to vw */
+            padding: 10px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -54,19 +54,19 @@
 
         header h1 {
             margin: 0;
-            font-size: 3vw; /* Changed to vw */
+            font-size: 2rem;
             text-align: center;
             flex-grow: 1;
             white-space: nowrap;
         }
 
         section {
-            padding: 5vw; /* Changed to vw */
+            padding: 50px;
         }
 
         section h2 {
-            font-size: 3vw; /* Changed to vw */
-            margin-bottom: 2vw; /* Changed to vw */
+            font-size: 2rem;
+            margin-bottom: 20px;
         }
 
         .addon-list {
@@ -76,8 +76,8 @@
 
         .addon-list li {
             background-color: #fff;
-            margin: 1vw auto; /* Changed to vw */
-            padding: 2vw; /* Changed to vw */
+            margin: 10px auto;
+            padding: 20px;
             max-width: 600px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
@@ -86,13 +86,13 @@
 
         .addon-list li h3 {
             margin-top: 0;
-            font-size: 2.5vw; /* Adjusted to match button text size */
+            font-size: 1.5rem;
         }
 
         .addon-list li p {
-            margin-bottom: 1.5vw; /* Changed to vw */
+            margin-bottom: 15px;
             text-align: left; /* Align text to the left */
-            font-size: 2.5vw; /* Made consistent with button text size */
+            font-size: 0.9rem; /* Make the text slightly smaller */
             line-height: 1.5; /* Improve readability */
         }
 
@@ -101,7 +101,7 @@
             width: 100%;
             height: auto;
             max-width: 600px;
-            margin: 1vw 0; /* Changed to vw */
+            margin: 10px 0;
             border-radius: 20px; /* This makes the image corners curvy */
         }
 
@@ -109,11 +109,10 @@
             display: inline-block;
             background-color: #e74c3c;
             color: #fff;
-            padding: 1.5vw 2vw; /* Adjusted to match text size */
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.1s ease;
-            font-size: 2.5vw; /* Made consistent with other text sizes */
         }
 
         .addon-list li .download-btn:hover {
@@ -127,23 +126,22 @@
         footer {
             background-color: #333;
             color: #fff;
-            padding: 2vw 0; /* Changed to vw */
-            margin-top: 5vw; /* Changed to vw */
+            padding: 20px 0;
+            margin-top: 50px;
         }
 
         footer p {
             margin: 0;
-            font-size: 2.5vw; /* Made consistent with button text size */
         }
 
         .social-icons {
-            margin-top: 1vw; /* Changed to vw */
+            margin-top: 10px;
         }
 
         .social-icons a {
             color: #fff;
-            font-size: 3vw; /* Changed to vw */
-            margin: 0 1vw; /* Changed to vw */
+            font-size: 24px;
+            margin: 0 10px;
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -162,13 +160,13 @@
             background-color: #333;
             overflow-x: hidden;
             transition: 0.5s;
-            padding-top: 6vw; /* Changed to vw */
+            padding-top: 60px;
         }
 
         .side-menu a {
-            padding: 1vw 1vw 1vw 3vw; /* Changed to vw */
+            padding: 8px 8px 8px 32px;
             text-decoration: none;
-            font-size: 2.5vw; /* Made consistent with other text sizes */
+            font-size: 25px;
             color: #fff;
             display: block;
             transition: 0.3s;
@@ -180,9 +178,9 @@
 
         .side-menu .close-btn {
             position: absolute;
-            top: 1vw; /* Changed to vw */
-            right: 2vw; /* Changed to vw */
-            font-size: 3vw; /* Changed to vw */
+            top: 10px;
+            right: 25px;
+            font-size: 36px;
             cursor: pointer;
         }
 
@@ -193,7 +191,7 @@
             }
 
             header h1 {
-                font-size: 5vw; /* Changed to vw */
+                font-size: 1.5rem;
                 margin-top: 0;
                 text-align: center;
                 white-space: nowrap;
@@ -228,27 +226,34 @@
         <h2>My Add-ons</h2>
         <ul class="addon-list">
             <li>
-                <h3>Replay</h3>
-                <img src="images/replay.webp" alt="Replay Addon">
-                <p>This add-on enhances your Minecraft experience by adding a replay feature.</p>
-                <a href="link-to-download" class="download-btn">Download</a>
+                <h3>ReplayCraft</h3>
+                <p>ReplayCraft has real replay capabilities, this add-on is great to record replays & cinematics of your world.</p>
+                <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft">
+                <a href="https://example.com/download1" target="_blank" class="download-btn">Download</a>
             </li>
             <li>
-                <h3>Another Addon</h3>
-                <img src="images/another-addon.webp" alt="Another Addon">
-                <p>This add-on adds new features and improvements to the game.</p>
-                <a href="link-to-download" class="download-btn">Download</a>
+                <h3>More Camera Perspectives</h3>
+                <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
+                <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
+                <a href="https://example.com/download2" target="_blank" class="download-btn">Download</a>
             </li>
-            <!-- Add more add-ons here -->
         </ul>
     </section>
 
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I create addons for Minecraft Bedrock Edition. Check out my work and feel free to reach out if you'd like to collaborate.</p>
+    </section>
+
     <footer>
-        <p>&copy; 2024 DarkBlock Gaming. All rights reserved.</p>
+        <p>&copy; 2024 DarkBlock Gaming. All Rights Reserved.</p>
         <div class="social-icons">
-            <a href="https://twitter.com/darkblockgaming" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://youtube.com/c/DarkBlockGaming" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://facebook.com/darkblockgaming" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://patreon.com" target="_blank"><i class="fa-brands fa-patreon"></i></a>
+            <a href="https://discord.com" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="mailto:contact.darkblock.gaming@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </footer>
 
