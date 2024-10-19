@@ -81,7 +81,7 @@
             max-width: 600px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
-            text-align: center;
+            text-align: center; /* Center the name and download button */
         }
 
         .addon-list li h3 {
@@ -91,9 +91,9 @@
 
         .addon-list li p {
             margin-bottom: 15px;
-            text-align: left;
-            font-size: 0.9rem;
-            line-height: 1.5;
+            text-align: left; /* Align text to the left */
+            font-size: 0.9rem; /* Make the text slightly smaller */
+            line-height: 1.5; /* Improve readability */
         }
 
         /* Add border-radius for curvy images */
@@ -102,45 +102,28 @@
             height: auto;
             max-width: 600px;
             margin: 10px 0;
-            border-radius: 20px;
+            border-radius: 20px; /* This makes the image corners curvy */
         }
 
-        /* Style the download button */
-        .addon-list li .button-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
-        }
-
-        .addon-list li .download-btn,
-        .addon-list li .more-info-btn {
+        /* Button styling */
+        .addon-list li .download-btn, .addon-list li .know-more-btn {
             display: inline-block;
-            width: 48%; /* Make both buttons take half the width */
+            background-color: #e74c3c;
+            color: #fff;
             padding: 10px 20px;
             text-decoration: none;
-            color: #fff;
             border-radius: 5px;
+            margin: 5px; /* Spacing between buttons */
             transition: background-color 0.3s ease, transform 0.1s ease;
+            width: calc(50% - 12px); /* Ensure both buttons are side by side and take equal width */
+            box-sizing: border-box; /* Include padding and border in width */
         }
 
-        .addon-list li .download-btn {
-            background-color: #e74c3c;
-        }
-
-        .addon-list li .download-btn:hover {
+        .addon-list li .download-btn:hover, .addon-list li .know-more-btn:hover {
             background-color: #c0392b;
         }
 
-        .addon-list li .more-info-btn {
-            background-color: #3498db;
-        }
-
-        .addon-list li .more-info-btn:hover {
-            background-color: #2980b9;
-        }
-
-        .addon-list li .download-btn:active,
-        .addon-list li .more-info-btn:active {
+        .addon-list li .download-btn:active, .addon-list li .know-more-btn:active {
             transform: scale(0.95);
         }
 
@@ -226,13 +209,8 @@
                 max-width: 100%;
             }
 
-            .addon-list li .button-container {
-                flex-direction: row; /* Ensure buttons are always side by side */
-            }
-
-            .addon-list li .download-btn,
-            .addon-list li .more-info-btn {
-                width: 48%; /* Force buttons to take half the width even on mobile */
+            .addon-list li .download-btn, .addon-list li .know-more-btn {
+                width: 100%; /* Stack buttons on mobile */
             }
         }
     </style>
@@ -259,27 +237,15 @@
                 <h3>ReplayCraft</h3>
                 <p>ReplayCraft has real replay capabilities, this add-on is great to record replays & cinematics of your world.</p>
                 <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft">
-                <div class="button-container">
-                    <a href="https://example.com/download1" target="_blank" class="download-btn">
-                        <i class="fa fa-download"></i> Download
-                    </a>
-                    <a href="https://example.com/knowmore1" target="_blank" class="more-info-btn">
-                        <i class="fa fa-info-circle"></i> Know More
-                    </a>
-                </div>
+                <a href="https://example.com/knowmore1" target="_blank" class="know-more-btn">Know More</a>
+                <a href="https://example.com/download1" target="_blank" class="download-btn">Download</a>
             </li>
             <li>
                 <h3>More Camera Perspectives</h3>
                 <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
                 <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
-                <div class="button-container">
-                    <a href="https://example.com/download2" target="_blank" class="download-btn">
-                        <i class="fa fa-download"></i> Download
-                    </a>
-                    <a href="https://example.com/knowmore2" target="_blank" class="more-info-btn">
-                        <i class="fa fa-info-circle"></i> Know More
-                    </a>
-                </div>
+                <a href="https://example.com/knowmore2" target="_blank" class="know-more-btn">Know More</a>
+                <a href="https://example.com/download2" target="_blank" class="download-btn">Download</a>
             </li>
         </ul>
     </section>
