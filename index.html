@@ -22,6 +22,7 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            text-align: center;
             overflow-x: hidden;
         }
 
@@ -80,13 +81,19 @@
             max-width: 600px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
+            text-align: center; /* Center the name and download button */
         }
 
-        /* Left-align the paragraphs and reduce font size */
+        .addon-list li h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
         .addon-list li p {
             margin-bottom: 15px;
-            text-align: left;
-            font-size: 0.9rem; /* Smaller font size */
+            text-align: left; /* Align text to the left */
+            font-size: 0.9rem; /* Make the text slightly smaller */
+            line-height: 1.5; /* Improve readability */
         }
 
         /* Add border-radius for curvy images */
@@ -226,7 +233,7 @@
             </li>
             <li>
                 <h3>More Camera Perspectives</h3>
-                <p>This add-on adds so many cool & useful camera perspectives, such as dynamic TPP with tons of customization options.</p>
+                <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
                 <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
                 <a href="https://example.com/download2" target="_blank" class="download-btn">Download</a>
             </li>
