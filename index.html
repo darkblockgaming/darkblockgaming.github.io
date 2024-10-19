@@ -1,3 +1,7 @@
+In this, the add-on section contains a download button with red background, can we add another button named know more? 
+
+And make sure that the new button is similar to size in this download button just make sure that they are side by side in both mobile view and normal view
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,25 +109,21 @@
             border-radius: 20px; /* This makes the image corners curvy */
         }
 
-        /* Button styling */
-        .addon-list li .download-btn, .addon-list li .know-more-btn {
+        .addon-list li .download-btn {
             display: inline-block;
             background-color: #e74c3c;
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            margin: 5px; /* Spacing between buttons */
             transition: background-color 0.3s ease, transform 0.1s ease;
-            width: calc(50% - 12px); /* Ensure both buttons are side by side and take equal width */
-            box-sizing: border-box; /* Include padding and border in width */
         }
 
-        .addon-list li .download-btn:hover, .addon-list li .know-more-btn:hover {
+        .addon-list li .download-btn:hover {
             background-color: #c0392b;
         }
 
-        .addon-list li .download-btn:active, .addon-list li .know-more-btn:active {
+        .addon-list li .download-btn:active {
             transform: scale(0.95);
         }
 
@@ -208,10 +208,6 @@
             .addon-list li img {
                 max-width: 100%;
             }
-
-            .addon-list li .download-btn, .addon-list li .know-more-btn {
-                width: 100%; /* Stack buttons on mobile */
-            }
         }
     </style>
 </head>
@@ -237,25 +233,22 @@
                 <h3>ReplayCraft</h3>
                 <p>ReplayCraft has real replay capabilities, this add-on is great to record replays & cinematics of your world.</p>
                 <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft">
-                <a href="https://example.com/knowmore1" target="_blank" class="know-more-btn">Know More</a>
                 <a href="https://example.com/download1" target="_blank" class="download-btn">Download</a>
             </li>
             <li>
                 <h3>More Camera Perspectives</h3>
                 <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
                 <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
-                <a href="https://example.com/knowmore2" target="_blank" class="know-more-btn">Know More</a>
                 <a href="https://example.com/download2" target="_blank" class="download-btn">Download</a>
             </li>
         </ul>
     </section>
 
-    
-
     <section id="about">
         <h2>About Me</h2>
         <p>Hello! I create addons for Minecraft Bedrock Edition. Check out my work and feel free to reach out if you'd like to collaborate.</p>
     </section>
+
     <footer>
         <p>&copy; 2024 DarkBlock Gaming. All Rights Reserved.</p>
         <div class="social-icons">
