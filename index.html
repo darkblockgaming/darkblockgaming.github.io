@@ -81,7 +81,7 @@
             max-width: 600px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
-            text-align: center; /* Center the name and download button */
+            text-align: center;
         }
 
         .addon-list li h3 {
@@ -91,9 +91,9 @@
 
         .addon-list li p {
             margin-bottom: 15px;
-            text-align: left; /* Align text to the left */
-            font-size: 0.9rem; /* Make the text slightly smaller */
-            line-height: 1.5; /* Improve readability */
+            text-align: left;
+            font-size: 0.9rem;
+            line-height: 1.5;
         }
 
         /* Add border-radius for curvy images */
@@ -102,38 +102,45 @@
             height: auto;
             max-width: 600px;
             margin: 10px 0;
-            border-radius: 20px; /* This makes the image corners curvy */
+            border-radius: 20px;
         }
 
-        /* Button container for download and know more buttons */
-        .button-container {
+        /* Style the download button */
+        .addon-list li .button-container {
             display: flex;
-            justify-content: center;
-            gap: 10px; /* Adds space between buttons */
+            justify-content: space-between;
             margin-top: 15px;
         }
 
-        .button-container a {
+        .addon-list li .download-btn,
+        .addon-list li .more-info-btn {
             display: inline-block;
-            background-color: #e74c3c;
-            color: #fff;
+            width: 48%; /* Make both buttons take half the width */
             padding: 10px 20px;
             text-decoration: none;
+            color: #fff;
             border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.1s ease;
-            max-width: 150px; /* Limit button width */
-            text-align: center;
         }
 
-        .button-container a i {
-            margin-right: 5px;
+        .addon-list li .download-btn {
+            background-color: #e74c3c;
         }
 
-        .button-container a:hover {
+        .addon-list li .download-btn:hover {
             background-color: #c0392b;
         }
 
-        .button-container a:active {
+        .addon-list li .more-info-btn {
+            background-color: #3498db;
+        }
+
+        .addon-list li .more-info-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .addon-list li .download-btn:active,
+        .addon-list li .more-info-btn:active {
             transform: scale(0.95);
         }
 
@@ -219,14 +226,13 @@
                 max-width: 100%;
             }
 
-            /* Stack buttons vertically on mobile */
-            .button-container {
-                flex-direction: column;
-                gap: 5px; /* Reduce the space between buttons */
+            .addon-list li .button-container {
+                flex-direction: row; /* Ensure buttons are always side by side */
             }
 
-            .button-container a {
-                max-width: 100%; /* Allow buttons to take full width */
+            .addon-list li .download-btn,
+            .addon-list li .more-info-btn {
+                width: 48%; /* Force buttons to take half the width even on mobile */
             }
         }
     </style>
@@ -255,10 +261,10 @@
                 <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft">
                 <div class="button-container">
                     <a href="https://example.com/download1" target="_blank" class="download-btn">
-                        <i class="fa-solid fa-download"></i> Download
+                        <i class="fa fa-download"></i> Download
                     </a>
-                    <a href="https://example.com/knowmore1" target="_blank" class="download-btn">
-                        <i class="fa-solid fa-info-circle"></i> Know More
+                    <a href="https://example.com/knowmore1" target="_blank" class="more-info-btn">
+                        <i class="fa fa-info-circle"></i> Know More
                     </a>
                 </div>
             </li>
@@ -268,10 +274,10 @@
                 <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
                 <div class="button-container">
                     <a href="https://example.com/download2" target="_blank" class="download-btn">
-                        <i class="fa-solid fa-download"></i> Download
+                        <i class="fa fa-download"></i> Download
                     </a>
-                    <a href="https://example.com/knowmore2" target="_blank" class="download-btn">
-                        <i class="fa-solid fa-info-circle"></i> Know More
+                    <a href="https://example.com/knowmore2" target="_blank" class="more-info-btn">
+                        <i class="fa fa-info-circle"></i> Know More
                     </a>
                 </div>
             </li>
@@ -282,7 +288,6 @@
         <h2>About Me</h2>
         <p>Hello! I create addons for Minecraft Bedrock Edition. Check out my work and feel free to reach out if you'd like to collaborate.</p>
     </section>
-
     <footer>
         <p>&copy; 2024 DarkBlock Gaming. All Rights Reserved.</p>
         <div class="social-icons">
