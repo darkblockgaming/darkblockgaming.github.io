@@ -178,10 +178,6 @@
     height: 100%;
     overflow: auto; 
     background-color: rgba(0, 0, 0, 0.4);
-    display: flex; /* Use flexbox */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-
 }
 
 .modal-content {
@@ -285,7 +281,7 @@
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </div>
-    
+ 
     <!-- Popup Modal -->
 <div id="infoPopup" class="modal">
     <div class="modal-content">
@@ -368,6 +364,9 @@
     // Get the modal
     var modal = document.getElementById("infoPopup");
 
+    // Ensure the modal is hidden initially
+    modal.style.display = "none";
+
     // Get the button that opens the modal
     var infoButtons = document.querySelectorAll(".knowmore-btn");
 
@@ -377,8 +376,8 @@
     // Loop through all info buttons and add click event to each
     infoButtons.forEach(function(button) {
         button.onclick = function(event) {
-            event.preventDefault(); // Prevent scrolling to top
-            modal.style.display = "block";
+            event.preventDefault(); // Prevent the default action
+            modal.style.display = "block"; // Show the modal
         };
     });
 
