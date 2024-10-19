@@ -24,6 +24,7 @@
             color: #333;
             text-align: center;
             overflow-x: hidden;
+            font-size: 1rem; /* Use rem for base font size */
         }
 
         /* Apply custom font only to section headings */
@@ -34,7 +35,7 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 20px;
+            padding: 1rem 2rem; /* Relative padding */
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -42,31 +43,31 @@
         }
 
         header img {
-            max-width: 80px;
+            max-width: 5rem; /* Adjusted from fixed size */
             height: auto;
         }
 
         header .menu-icon {
-            max-width: 80px;
+            max-width: 5rem;
             height: auto;
             cursor: pointer;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 2rem; /* Adjust to relative units */
             text-align: center;
             flex-grow: 1;
             white-space: nowrap;
         }
 
         section {
-            padding: 50px;
+            padding: 5vh 5vw; /* Use viewport units for scaling */
         }
 
         section h2 {
             font-size: 2rem;
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
 
         .addon-list {
@@ -76,12 +77,12 @@
 
         .addon-list li {
             background-color: #fff;
-            margin: 10px auto;
-            padding: 20px;
-            max-width: 600px;
+            margin: 1rem auto;
+            padding: 2rem;
+            max-width: 90vw; /* Adjust for larger screens */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-            text-align: center; /* Center the name and download button */
+            border-radius: 1rem;
+            text-align: center;
         }
 
         .addon-list li h3 {
@@ -90,28 +91,27 @@
         }
 
         .addon-list li p {
-            margin-bottom: 15px;
-            text-align: left; /* Align text to the left */
-            font-size: 0.9rem; /* Make the text slightly smaller */
-            line-height: 1.5; /* Improve readability */
+            margin-bottom: 1rem;
+            text-align: left;
+            font-size: 0.9rem;
+            line-height: 1.5;
         }
 
-        /* Add border-radius for curvy images */
         .addon-list li img {
             width: 100%;
             height: auto;
-            max-width: 600px;
-            margin: 10px 0;
-            border-radius: 20px; /* This makes the image corners curvy */
+            max-width: 90vw;
+            margin: 0.5rem 0;
+            border-radius: 1.25rem;
         }
 
         .addon-list li .download-btn {
             display: inline-block;
             background-color: #e74c3c;
             color: #fff;
-            padding: 10px 20px;
+            padding: 0.625rem 1.25rem; /* Relative padding */
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 0.25rem;
             transition: background-color 0.3s ease, transform 0.1s ease;
         }
 
@@ -126,8 +126,8 @@
         footer {
             background-color: #333;
             color: #fff;
-            padding: 20px 0;
-            margin-top: 50px;
+            padding: 2rem 0;
+            margin-top: 5vh;
         }
 
         footer p {
@@ -135,13 +135,13 @@
         }
 
         .social-icons {
-            margin-top: 10px;
+            margin-top: 0.625rem;
         }
 
         .social-icons a {
             color: #fff;
-            font-size: 24px;
-            margin: 0 10px;
+            font-size: 1.5rem;
+            margin: 0 0.625rem;
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -160,13 +160,13 @@
             background-color: #333;
             overflow-x: hidden;
             transition: 0.5s;
-            padding-top: 60px;
+            padding-top: 5rem;
         }
 
         .side-menu a {
-            padding: 8px 8px 8px 32px;
+            padding: 0.5rem 2rem;
             text-decoration: none;
-            font-size: 25px;
+            font-size: 1.5625rem; /* Relative font size */
             color: #fff;
             display: block;
             transition: 0.3s;
@@ -178,16 +178,16 @@
 
         .side-menu .close-btn {
             position: absolute;
-            top: 10px;
-            right: 25px;
-            font-size: 36px;
+            top: 0.625rem;
+            right: 1.5625rem;
+            font-size: 2.25rem;
             cursor: pointer;
         }
 
         /* Media query for mobile devices */
         @media (max-width: 768px) {
             header img {
-                max-width: 50px;
+                max-width: 3rem;
             }
 
             header h1 {
@@ -198,7 +198,7 @@
             }
 
             header .menu-icon {
-                max-width: 50px;
+                max-width: 3rem;
             }
 
             .addon-list li img {
@@ -259,7 +259,7 @@
 
     <script>
         function openMenu() {
-            document.getElementById("sideMenu").style.width = "250px";
+            document.getElementById("sideMenu").style.width = "15rem"; /* Use rem for consistent scaling */
         }
 
         function closeMenu() {
