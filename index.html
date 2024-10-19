@@ -105,24 +105,54 @@
             border-radius: 20px; /* This makes the image corners curvy */
         }
 
-        .addon-list li .download-btn {
-            display: inline-block;
-            background-color: #e74c3c;
-            color: #fff;
+        /* Button Container */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        /* Download Button Styling */
+        .download-btn, .know-more-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.1s ease;
+            font-size: 0.9rem;
         }
 
-        .addon-list li .download-btn:hover {
+        .download-btn {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        .download-btn:hover {
             background-color: #c0392b;
         }
 
-        .addon-list li .download-btn:active {
+        .download-btn:active {
             transform: scale(0.95);
         }
 
+        /* Know More Button Styling */
+        .know-more-btn {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .know-more-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .know-more-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Footer Styling */
         footer {
             background-color: #333;
             color: #fff;
@@ -204,6 +234,16 @@
             .addon-list li img {
                 max-width: 100%;
             }
+
+            .button-container {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .download-btn, .know-more-btn {
+                width: 100%;
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -229,13 +269,27 @@
                 <h3>ReplayCraft</h3>
                 <p>ReplayCraft has real replay capabilities, this add-on is great to record replays & cinematics of your world.</p>
                 <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft">
-                <a href="https://example.com/download1" target="_blank" class="download-btn">Download</a>
+                <div class="button-container">
+                    <a href="https://example.com/download1" target="_blank" class="download-btn">
+                        <i class="fa-solid fa-download"></i> Download
+                    </a>
+                    <a href="https://example.com/knowmore1" target="_blank" class="know-more-btn">
+                        <i class="fa-solid fa-info-circle"></i> Know More
+                    </a>
+                </div>
             </li>
             <li>
                 <h3>More Camera Perspectives</h3>
                 <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
                 <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
-                <a href="https://example.com/download2" target="_blank" class="download-btn">Download</a>
+                <div class="button-container">
+                    <a href="https://example.com/download2" target="_blank" class="download-btn">
+                        <i class="fa-solid fa-download"></i> Download
+                    </a>
+                    <a href="https://example.com/knowmore2" target="_blank" class="know-more-btn">
+                        <i class="fa-solid fa-info-circle"></i> Know More
+                    </a>
+                </div>
             </li>
         </ul>
     </section>
