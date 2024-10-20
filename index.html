@@ -383,19 +383,6 @@
         document.getElementById("sideMenu").style.width = "0";
       }
 
-            
-      // Close popup when clicking outside of it
-      // Close popup when clicking outside of it
-window.onclick = function(event) {
-  const popup = document.getElementById("popup");
-  const popupContent = document.querySelector(".popup-content"); // Adjust this selector if needed
-
-  // Check if the popup is visible and the click is outside of the popup
-  if (!popup.style.display === "block" && !popupContent.contains(event.target)) {
-    openPopup();
-  }
-}
-
       function openPopup(addonName) {
         document.getElementById('popup-title').textContent = addonName;
         document.getElementById('popup').style.display = 'block';
@@ -404,6 +391,30 @@ window.onclick = function(event) {
       function closePopup() {
         document.getElementById('popup').style.display = 'none';
       }
+
+
+      const popup = document.getElementById("popup");
+const popupButton = document.getElementById("popupButton");
+const closeButton = document.getElementById("closeButton");
+
+
+
+// Close the popup when clicking on the close button
+closeButton.onclick = closePopup;
+
+// Close the popup when clicking the popup button
+popupButton.onclick = openPopup;
+
+// Function to handle click events outside the popup
+function handleClickOutside(event) {
+    // Check if the click is outside the popup and the button
+    if (popup.style.display === "block" && !popup.contains(event.target) && event.target !== popupButton) {
+        closePopup(); // Close the popup
+    }
+}
+
+// Add event listener to the document for clicks
+document.addEventListener("click", handleClickOutside);
     </script>
   </body>
 </html>
