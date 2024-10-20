@@ -302,6 +302,7 @@
       <h1>DarkBlock Gaming</h1>
       <img src="images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
     </header>
+    
     <!-- Side Menu -->
     <div id="sideMenu" class="side-menu">
       <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
@@ -309,6 +310,8 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
+    
+    <!-- Info Popup -->
     <div class="popup" id="popup">
       <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
       <h4 id="popup-title"></h4>
@@ -317,6 +320,8 @@
       <a href="https://example.com/download" class="popup-btn" target="_blank">
         <i class="fa fa-download"></i>Download File </a>
     </div>
+    
+    
     <section id="addons">
       <h2>My Add-ons</h2>
       <ul class="addon-list">
@@ -325,6 +330,7 @@
           <p>ReplayCraft has real replay capabilities, this add-on is great to record replays & cinematics of your world.</p>
           <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft">
           <button class="knowmore-btn">
+          <button class="knowmore-btn" onclick="openPopup('ReplayCraft')">
             <i class="fa fa-info-circle"></i> Info </button>
           <button class="download-btn">
             <i class="fa fa-download"></i> Download </button>
@@ -342,11 +348,12 @@
           <h3>Player Spectator</h3>
           <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
           <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
-          <button class="knowmore-btn" onClick="openPopup()">
+          <button class="knowmore-btn" onClick="openPopup('Player Spectator')">
             <i class="fa fa-info-circle"></i> Info </button>
           <button class="download-btn">
             <i class="fa fa-download"></i> Download </button>
     </section>
+    
     <section id="about">
       <h2>About Me</h2>
       <p>Hello! I create addons for Minecraft Bedrock Edition. Check out my work and feel free to reach out if you'd like to collaborate.</p>
@@ -374,8 +381,9 @@
         </a>
       </div>
     </footer>
+    
     <script>
-      // Menu functions
+    	
       function openMenu() {
         document.getElementById("sideMenu").style.width = "250px";
       }
@@ -383,7 +391,7 @@
       function closeMenu() {
         document.getElementById("sideMenu").style.width = "0";
       }
-      let infoPopup = document.getElementById("infoPopup");
+      
 
       function openPopup(addonName) {
         document.getElementById('popup-title').textContent = addonName;
