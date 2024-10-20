@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -221,6 +222,57 @@
     cursor: pointer;
 }
 
+
+
+
+.popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .popup h4 {
+            margin-top: 0;
+        }
+
+        .popup .popup-btn {
+            display: block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 0;
+            text-decoration: none;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .popup .popup-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .popup-close {
+            cursor: pointer;
+            background-color: #e74c3c;
+            padding: 5px;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .popup-close:hover {
+            background-color: #c0392b;
+        }
+
 /* Keyframes for slide-in animation */
 @keyframes slide-in {
     from {
@@ -326,18 +378,20 @@
                 <h3>More Camera Perspectives</h3>
                 <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
                 <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
-                <button class="knowmore-btn" onClick="openPopup()">
+                <button class="knowmore-btn" onclick="openPopup('More Camera Perspectives')">
+                	
                     <i class="fa fa-info-circle"></i> Info
                 </button>
-                <div id="infoPopup" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onClick="closePopup()">&times;</span>
-                        <h2 style="font-family: sans-serif;">Addon Information</h2>
-                        <p><strong>Supported Version:</strong> 1.19+</p>
-                        <p><strong>Pack Type:</strong> Resource/Behavior</p>
-                        <p><strong>Description:</strong> This is a sample description for the addon.</p>
-                    </div>
-                </div>
+                
+                <div class="popup" id="popup">
+        <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
+        <h4 id="popup-title"></h4>
+        <a href="https://example.com/info1" class="popup-btn" target="_blank">Know More 1</a>
+        <a href="https://example.com/info2" class="popup-btn" target="_blank">Know More 2</a>
+        <a href="https://example.com/download" class="popup-btn" target="_blank"><i class="fa fa-download"></i>Download File</a>
+    </div>
+                
+                
                 
                 <button class="download-btn">
                     <i class="fa fa-download"></i> Download
@@ -396,13 +450,22 @@
     
     let infoPopup = document.getElementById("infoPopup");
     
-    function openPopup() {
+    function openPopup1() {
     	infoPopup.classList.add("modal-show");
     }
     
-    function closePopup() {
+    function closePopup1() {
     	infoPopup.classList.remove("modal-show");
     }
+    
+    function openPopup(addonName) {
+            document.getElementById('popup-title').textContent = addonName;
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
     
 </script>
     
