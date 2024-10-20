@@ -109,43 +109,40 @@
         border-radius: 20px;
         /* This makes the image corners curvy */
       }
-      
-      
 
-      
       .addon-list li .download-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 16px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background: var(--btn-bg-color, linear-gradient(135deg, #3498db, #2980b9)); /* Default background */
-}
+         z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 16px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: var(--btn-bg-color, linear-gradient(135deg, #3498db, #2980b9));
+        /* Default background */
+      }
 
-.addon-list li .download-btn i {
-    margin-right: 4px;
-    font-size: 18px;
-}
+      .addon-list li .download-btn i {
+        margin-right: 4px;
+        font-size: 18px;
+      }
 
-.addon-list li .download-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
+      .addon-list li .download-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
 
-.addon-list li .download-btn:active {
-    transform: translateY(1px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-
+      .addon-list li .download-btn:active {
+        transform: translateY(1px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
 
       footer {
         background-color: #333;
@@ -177,6 +174,7 @@
       /* Popup Modal Styles */
       .popup {
         display: none;
+        z-index: 9999;
         position: fixed;
         top: 50%;
         left: 50%;
@@ -303,7 +301,6 @@
       <h1>DarkBlock Gaming</h1>
       <img src="images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
     </header>
-    
     <!-- Side Menu -->
     <div id="sideMenu" class="side-menu">
       <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
@@ -311,7 +308,6 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
-    
     <!-- Info Popup -->
     <div class="popup" id="popup">
       <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
@@ -319,10 +315,8 @@
       <a href="https://example.com/info1" class="popup-btn" target="_blank">Know More 1</a>
       <a href="https://example.com/info2" class="popup-btn" target="_blank">Know More 2</a>
       <a href="https://example.com/download" class="popup-btn" target="_blank">
-        <i class="fa fa-download"> </i>Download File </a>
+        <i class="fa fa-download"></i>Download File </a>
     </div>
-    
-    
     <section id="addons">
       <h2>My Add-ons</h2>
       <ul class="addon-list">
@@ -331,38 +325,28 @@
           <p>ReplayCraft has real replay capabilities, this add-on is great to record replays & cinematics of your world.</p>
           <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft">
           <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('ReplayCraft')">
-              <i class="fa fa-info-circle"></i> Info
-          </button>
+            <i class="fa fa-info-circle"></i> Info </button>
           <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
-              <i class="fa fa-download"></i> Download
-          </button>
+            <i class="fa fa-download"></i> Download </button>
         </li>
         <li>
           <h3>More Camera Perspectives</h3>
           <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
           <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
           <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('More Camera Perspectives')">
-              <i class="fa fa-info-circle"></i> Info
-          </button>
+            <i class="fa fa-info-circle"></i> Info </button>
           <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
-              <i class="fa fa-download"></i> Download
-          </button>
+            <i class="fa fa-download"></i> Download </button>
         </li>
         <li>
           <h3>Player Spectator</h3>
           <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
           <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
           <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('Player Spectator')">
-              <i class="fa fa-info-circle"></i> Info
-          </button>
+            <i class="fa fa-info-circle"></i> Info </button>
           <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
-              <i class="fa fa-download"></i> Download
-          </button>
-          
-
-            
+            <i class="fa fa-download"></i> Download </button>
     </section>
-    
     <section id="about">
       <h2>About Me</h2>
       <p>Hello! I create addons for Minecraft Bedrock Edition. Check out my work and feel free to reach out if you'd like to collaborate.</p>
@@ -390,9 +374,7 @@
         </a>
       </div>
     </footer>
-    
     <script>
-    	
       function openMenu() {
         document.getElementById("sideMenu").style.width = "250px";
       }
@@ -400,7 +382,6 @@
       function closeMenu() {
         document.getElementById("sideMenu").style.width = "0";
       }
-      
 
       function openPopup(addonName) {
         document.getElementById('popup-title').textContent = addonName;
