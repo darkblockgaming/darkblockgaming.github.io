@@ -144,30 +144,39 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly reduced shadow on click */
 }
       
-      
+      .addon-list li .download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: var(--btn-bg-color, linear-gradient(135deg, #3498db, #2980b9)); /* Default background */
+}
 
-      
-      
+.addon-list li .download-btn i {
+    margin-right: 8px;
+    font-size: 18px;
+}
 
-      .addon-list li .knowmore-btn {
-        display: inline-flex;
-        align-items: center; /* Align icon and text vertically */
-        background-color: #4373d5;
-        color: #fff;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, transform 0.1s ease;
-      }
-      .addon-list li .knowmore-btn i {
-          margin-right: 8px; /* Adds space between the icon and text */
-      }
-      .addon-list li .knowmore-btn:hover {
-        background-color: #c0392b;
-      }
-      .addon-list li .knowmore-btn:active {
-        transform: scale(0.95);
-      }
+.addon-list li .download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.addon-list li .download-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
 
       footer {
         background-color: #333;
@@ -352,10 +361,12 @@
           <h3>ReplayCraft</h3>
           <p>ReplayCraft has real replay capabilities, this add-on is great to record replays & cinematics of your world.</p>
           <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft">
-          <button class="knowmore-btn" onclick="openPopup('ReplayCraft')">
-            <i class="fa fa-info-circle"> </i> Info </button>
-          <button class="download-btn">
-            <i class="fa fa-download"> </i> Download </button>
+          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #4caf50, #388e3c);" onclick="openPopup('ReplayCraft')">
+            <i class="fa fa-info-circle"></i> Info
+          </button>
+          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+            <i class="fa fa-download"></i> Download
+          </button>
         </li>
         <li>
           <h3>More Camera Perspectives</h3>
@@ -374,6 +385,9 @@
             <i class="fa fa-info-circle"></i> Info </button>
           <button class="download-btn">
             <i class="fa fa-download"> </i> Download </button>
+          
+
+            
     </section>
     
     <section id="about">
