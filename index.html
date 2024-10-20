@@ -111,25 +111,28 @@
       }
 
       .addon-list li .download-btn {
-        display: inline-flex;
-        background-color: #e74c3c;
-        color: #fff;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, transform 0.1s ease;
+          display: inline-flex;
+          align-items: center; /* Align icon and text vertically */
+          background-color: #e74c3c;
+          color: #fff;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background-color 0.3s ease, transform 0.1s ease;
       }
-
+      .addon-list li .download-btn i {
+          margin-right: 8px; /* Adds space between the icon and text */
+      }
       .addon-list li .download-btn:hover {
-        background-color: #c0392b;
+          background-color: #c0392b;
       }
-
       .addon-list li .download-btn:active {
-        transform: scale(0.95);
+          transform: scale(0.95);
       }
 
       .addon-list li .knowmore-btn {
         display: inline-flex;
+        align-items: center; /* Align icon and text vertically */
         background-color: #4373d5;
         color: #fff;
         padding: 10px 20px;
@@ -137,11 +140,12 @@
         border-radius: 5px;
         transition: background-color 0.3s ease, transform 0.1s ease;
       }
-
+      .addon-list li .knowmore-btn i {
+          margin-right: 8px; /* Adds space between the icon and text */
+      }
       .addon-list li .knowmore-btn:hover {
         background-color: #c0392b;
       }
-
       .addon-list li .knowmore-btn:active {
         transform: scale(0.95);
       }
