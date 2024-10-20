@@ -399,7 +399,7 @@ window.onclick = function(event) {
   const popupContent = document.querySelector(".popup-content"); // Adjust this selector if needed
 
   // Check if the popup is visible and the click is outside of the popup
-  if (popup.style.display === "block" && !popupContent.contains(event.target)) {
+  if (popup.style.display === "block") {
     closePopup();
   }
 }
