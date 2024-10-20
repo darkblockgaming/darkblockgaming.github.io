@@ -393,12 +393,16 @@
       }
       
       // Close popup when clicking outside of it
-      window.onclick = function(event) {
-        const popup = document.getElementById("popup");
-        if (event.target !== popup) {
-          closePopup();
-        }
-      }
+      // Close popup when clicking outside of it
+window.onclick = function(event) {
+  const popup = document.getElementById("popup");
+  const popupContent = document.querySelector(".popup-content"); // Adjust this selector if needed
+
+  // Check if the popup is visible and the click is outside of the popup
+  if (popup.style.display === "block" && !popupContent.contains(event.target)) {
+    closePopup();
+  }
+}
     </script>
   </body>
 </html>
