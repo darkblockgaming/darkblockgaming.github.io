@@ -1,474 +1,398 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Minecraft Bedrock Edition Addons by DarkBlock Gaming">
     <title>DarkBlock Gaming - Minecraft Bedrock Edition Addons</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        /* Load the custom font */
-        @font-face {
-            font-family: 'MinecraftTen';
-            src: url('fonts/minecraft-ten.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
+      /* Load the custom font */
+      @font-face {
+        font-family: 'MinecraftTen';
+        src: url('fonts/minecraft-ten.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        text-align: center;
+        overflow-x: hidden;
+      }
+
+      /* Apply custom font only to section headings */
+      section h2 {
+        font-family: 'MinecraftTen', sans-serif;
+        /* Use the custom Minecraft font */
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+
+      header img {
+        max-width: 80px;
+        height: auto;
+      }
+
+      header .menu-icon {
+        max-width: 80px;
+        height: auto;
+        cursor: pointer;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+        text-align: center;
+        flex-grow: 1;
+        white-space: nowrap;
+      }
+
+      section {
+        padding: 50px;
+      }
+
+      section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .addon-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .addon-list li {
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 20px;
+        max-width: 600px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        text-align: center;
+        /* Center the name and download button */
+      }
+
+      .addon-list li h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+      }
+
+      .addon-list li p {
+        margin-bottom: 15px;
+        text-align: left;
+        /* Align text to the left */
+        font-size: 0.9rem;
+        /* Make the text slightly smaller */
+        line-height: 1.5;
+        /* Improve readability */
+      }
+
+      /* Add border-radius for curvy images */
+      .addon-list li img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        margin: 10px 0;
+        border-radius: 20px;
+        /* This makes the image corners curvy */
+      }
+
+      .addon-list li .download-btn {
+        display: inline-block;
+        background-color: #e74c3c;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.1s ease;
+      }
+
+      .addon-list li .download-btn:hover {
+        background-color: #c0392b;
+      }
+
+      .addon-list li .download-btn:active {
+        transform: scale(0.95);
+      }
+
+      .addon-list li .knowmore-btn {
+        display: inline-block;
+        background-color: #4373d5;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.1s ease;
+      }
+
+      .addon-list li .knowmore-btn:hover {
+        background-color: #c0392b;
+      }
+
+      .addon-list li .knowmore-btn:active {
+        transform: scale(0.95);
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        margin-top: 50px;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        color: #fff;
+        font-size: 24px;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #e74c3c;
+      }
+
+      /* Popup Modal Styles */
+      .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .popup h4 {
+        margin-top: 0;
+      }
+
+      .popup .popup-btn {
+        display: block;
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 0;
+        text-decoration: none;
+        margin: 10px 0;
+        border-radius: 5px;
+      }
+
+      .popup .popup-btn:hover {
+        background-color: #2980b9;
+      }
+
+      .popup-close {
+        cursor: pointer;
+        background-color: #e74c3c;
+        padding: 5px;
+        border-radius: 5px;
+        color: #fff;
+        text-decoration: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+
+      .popup-close:hover {
+        background-color: #c0392b;
+      }
+
+      /* Keyframes for slide-in animation */
+      @keyframes slide-in {
+        from {
+          transform: translateY(-20px);
+          /* Start slightly above */
+          opacity: 0;
+          /* Start invisible */
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            overflow-x: hidden;
+        to {
+          transform: translateY(0);
+          /* End in place */
+          opacity: 1;
+          /* Fully visible */
         }
+      }
 
-        /* Apply custom font only to section headings */
-        section h2 {
-            font-family: 'MinecraftTen', sans-serif; /* Use the custom Minecraft font */
-        }
+      /* Side menu styling */
+      .side-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: nowrap;
-        }
+      .side-menu a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
 
+      .side-menu a:hover {
+        color: #e74c3c;
+      }
+
+      .side-menu .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 36px;
+        cursor: pointer;
+      }
+
+      /* Media query for mobile devices */
+      @media (max-width: 768px) {
         header img {
-            max-width: 80px;
-            height: auto;
-        }
-
-        header .menu-icon {
-            max-width: 80px;
-            height: auto;
-            cursor: pointer;
+          max-width: 50px;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 2rem;
-            text-align: center;
-            flex-grow: 1;
-            white-space: nowrap;
+          font-size: 1.5rem;
+          margin-top: 0;
+          text-align: center;
+          white-space: nowrap;
         }
 
-        section {
-            padding: 50px;
+        header .menu-icon {
+          max-width: 50px;
         }
 
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .addon-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .addon-list li {
-            background-color: #fff;
-            margin: 10px auto;
-            padding: 20px;
-            max-width: 600px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-            text-align: center; /* Center the name and download button */
-        }
-
-        .addon-list li h3 {
-            margin-top: 0;
-            font-size: 1.5rem;
-        }
-
-        .addon-list li p {
-            margin-bottom: 15px;
-            text-align: left; /* Align text to the left */
-            font-size: 0.9rem; /* Make the text slightly smaller */
-            line-height: 1.5; /* Improve readability */
-        }
-
-        /* Add border-radius for curvy images */
         .addon-list li img {
-            width: 100%;
-            height: auto;
-            max-width: 600px;
-            margin: 10px 0;
-            border-radius: 20px; /* This makes the image corners curvy */
+          max-width: 100%;
         }
-
-        .addon-list li .download-btn {
-            display: inline-block;
-            background-color: #e74c3c;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.1s ease;
-        }
-
-        .addon-list li .download-btn:hover {
-            background-color: #c0392b;
-        }
-
-        .addon-list li .download-btn:active {
-            transform: scale(0.95);
-        }
-        
-        .addon-list li .knowmore-btn {
-            display: inline-block;
-            background-color: #4373d5;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.1s ease;
-        }
-
-        .addon-list li .knowmore-btn:hover {
-            background-color: #c0392b;
-        }
-
-        .addon-list li .knowmore-btn:active {
-            transform: scale(0.95);
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        .social-icons {
-            margin-top: 10px;
-        }
-
-        .social-icons a {
-            color: #fff;
-            font-size: 24px;
-            margin: 0 10px;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: #e74c3c;
-        }
-        
-        /* Popup Modal Styles */
-.modal {
-    position: fixed;
-    z-index: 1000; 
-    left: 0;
-    top: 0;  /* Set top to 0 to ensure the modal covers the entire viewport */
-    width: 100%;
-    height: 100%;
-    overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.4);
-    visibility: hidden;
-    opacity: 0;            /* Start invisible */
-    transition: visibility 0s, opacity 0.5s ease; /* Transition effect */
-    display: flex;         /* Use flexbox to center content */
-    justify-content: center; /* Center horizontally */
-    align-items: center;    /* Center vertically */
-}
-
-.modal-show {
-    visibility: visible; 
-    opacity: 1;           /* Fade in effect */
-}
-
-.modal-content {
-    background-color: #fefefe;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 10px;
-    text-align: left;
-    animation: slide-in 0.5s ease; /* Slide-in animation */
-}
-
-.modal-content h2 {
-    margin-top: 0;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-
-
-.popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 300px;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .popup h4 {
-            margin-top: 0;
-        }
-
-        .popup .popup-btn {
-            display: block;
-            background-color: #3498db;
-            color: #fff;
-            padding: 10px 0;
-            text-decoration: none;
-            margin: 10px 0;
-            border-radius: 5px;
-        }
-
-        .popup .popup-btn:hover {
-            background-color: #2980b9;
-        }
-
-        .popup-close {
-            cursor: pointer;
-            background-color: #e74c3c;
-            padding: 5px;
-            border-radius: 5px;
-            color: #fff;
-            text-decoration: none;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-
-        .popup-close:hover {
-            background-color: #c0392b;
-        }
-
-/* Keyframes for slide-in animation */
-@keyframes slide-in {
-    from {
-        transform: translateY(-20px); /* Start slightly above */
-        opacity: 0;                   /* Start invisible */
-    }
-    to {
-        transform: translateY(0);      /* End in place */
-        opacity: 1;                    /* Fully visible */
-    }
-}
-        
-        /* Side menu styling */
-        .side-menu {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            top: 0;
-            right: 0;
-            background-color: #333;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-
-        .side-menu a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #fff;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .side-menu a:hover {
-            color: #e74c3c;
-        }
-
-        .side-menu .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 25px;
-            font-size: 36px;
-            cursor: pointer;
-        }
-
-        /* Media query for mobile devices */
-        @media (max-width: 768px) {
-            header img {
-                max-width: 50px;
-            }
-
-            header h1 {
-                font-size: 1.5rem;
-                margin-top: 0;
-                text-align: center;
-                white-space: nowrap;
-            }
-
-            header .menu-icon {
-                max-width: 50px;
-            }
-
-            .addon-list li img {
-                max-width: 100%;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="images/dbg/logo.webp" alt="DarkBlock Gaming Logo">
-        <h1>DarkBlock Gaming</h1>
-        <img src="images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
+      <img src="images/dbg/logo.webp" alt="DarkBlock Gaming Logo">
+      <h1>DarkBlock Gaming</h1>
+      <img src="images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
     </header>
-
     <!-- Side Menu -->
     <div id="sideMenu" class="side-menu">
-        <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
-        <a href="#addons">Addons</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+      <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+      <a href="#addons">Addons</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </div>
- 
-
-
+    <div class="popup" id="popup">
+      <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
+      <h4 id="popup-title"></h4>
+      <a href="https://example.com/info1" class="popup-btn" target="_blank">Know More 1</a>
+      <a href="https://example.com/info2" class="popup-btn" target="_blank">Know More 2</a>
+      <a href="https://example.com/download" class="popup-btn" target="_blank">
+        <i class="fa fa-download"></i>Download File </a>
+    </div>
     <section id="addons">
-        <h2>My Add-ons</h2>
-        <ul class="addon-list">
-            <li>
-                <h3>ReplayCraft</h3>
-                <p>ReplayCraft has real replay capabilities, this add-on is great to record replays & cinematics of your world.</p>
-                <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft">
-                <button class="knowmore-btn">
-                    <i class="fa fa-info-circle"></i> Info
-                </button>
-                
-                <button class="download-btn">
-                    <i class="fa fa-download"></i> Download
-                </button>
-            </li>
-            <li>
-                <h3>More Camera Perspectives</h3>
-                <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
-                <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
-                <button class="knowmore-btn" onclick="openPopup('More Camera Perspectives')">
-                	
-                    <i class="fa fa-info-circle"></i> Info
-                </button>
-                
-                <div class="popup" id="popup">
-        <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
-        <h4 id="popup-title"></h4>
-        <a href="https://example.com/info1" class="popup-btn" target="_blank">Know More 1</a>
-        <a href="https://example.com/info2" class="popup-btn" target="_blank">Know More 2</a>
-        <a href="https://example.com/download" class="popup-btn" target="_blank"><i class="fa fa-download"></i>Download File</a>
-    </div>
-                
-                
-                
-                <button class="download-btn">
-                    <i class="fa fa-download"></i> Download
-                </button>
-            </li>
-            <li>
-                <h3>Player Spectator</h3>
-                <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
-                <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
-                <button class="knowmore-btn" onClick="openPopup()">
-                    <i class="fa fa-info-circle"></i> Info
-                </button>
-                
-                <div id="infoPopup" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onClick="closePopup()">&times;</span>
-                        <h2 style="font-family: sans-serif;">Addon Information</h2>
-                        <p><strong>Supported Version:</strong> 1.19+</p>
-                        <p><strong>Pack Type:</strong> Resource/Behavior</p>
-                        <p><strong>Description:</strong> This is a sample description for the addon.</p>
-                    </div>
-                </div>
-               
-                
-                <button class="download-btn">
-                    <i class="fa fa-download"></i> Download
-                </button>  
+      <h2>My Add-ons</h2>
+      <ul class="addon-list">
+        <li>
+          <h3>ReplayCraft</h3>
+          <p>ReplayCraft has real replay capabilities, this add-on is great to record replays & cinematics of your world.</p>
+          <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft">
+          <button class="knowmore-btn">
+            <i class="fa fa-info-circle"></i> Info </button>
+          <button class="download-btn">
+            <i class="fa fa-download"></i> Download </button>
+        </li>
+        <li>
+          <h3>More Camera Perspectives</h3>
+          <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
+          <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
+          <button class="knowmore-btn" onclick="openPopup('More Camera Perspectives')">
+            <i class="fa fa-info-circle"></i> Info </button>
+          <button class="download-btn">
+            <i class="fa fa-download"></i> Download </button>
+        </li>
+        <li>
+          <h3>Player Spectator</h3>
+          <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
+          <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
+          <button class="knowmore-btn" onClick="openPopup()">
+            <i class="fa fa-info-circle"></i> Info </button>
+          <button class="download-btn">
+            <i class="fa fa-download"></i> Download </button>
     </section>
-
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I create addons for Minecraft Bedrock Edition. Check out my work and feel free to reach out if you'd like to collaborate.</p>
+      <h2>About Me</h2>
+      <p>Hello! I create addons for Minecraft Bedrock Edition. Check out my work and feel free to reach out if you'd like to collaborate.</p>
     </section>
-
     <footer>
-        <p>&copy; 2024 DarkBlock Gaming. All Rights Reserved.</p>
-        <div class="social-icons">
-            <a href="https://patreon.com" target="_blank"><i class="fa-brands fa-patreon"></i></a>
-            <a href="https://discord.com" target="_blank"><i class="fa-brands fa-discord"></i></a>
-            <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="mailto:contact.darkblock.gaming@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        </div>
+      <p>&copy; 2024 DarkBlock Gaming. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="https://patreon.com" target="_blank">
+          <i class="fa-brands fa-patreon"></i>
+        </a>
+        <a href="https://discord.com" target="_blank">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+        <a href="https://x.com" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="mailto:contact.darkblock.gaming@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
     </footer>
-
     <script>
-    // Menu functions
-    function openMenu() {
+      // Menu functions
+      function openMenu() {
         document.getElementById("sideMenu").style.width = "250px";
-    }
+      }
 
-    function closeMenu() {
+      function closeMenu() {
         document.getElementById("sideMenu").style.width = "0";
-    }
-    
-    let infoPopup = document.getElementById("infoPopup");
-    
-    function openPopup1() {
-    	infoPopup.classList.add("modal-show");
-    }
-    
-    function closePopup1() {
-    	infoPopup.classList.remove("modal-show");
-    }
-    
-    function openPopup(addonName) {
-            document.getElementById('popup-title').textContent = addonName;
-            document.getElementById('popup').style.display = 'block';
-        }
+      }
+      let infoPopup = document.getElementById("infoPopup");
 
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
-    
-</script>
-    
-    
-</body>
+      function openPopup(addonName) {
+        document.getElementById('popup-title').textContent = addonName;
+        document.getElementById('popup').style.display = 'block';
+      }
+
+      function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+      }
+    </script>
+  </body>
 </html>
