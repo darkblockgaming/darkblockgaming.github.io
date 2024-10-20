@@ -383,15 +383,7 @@
         document.getElementById("sideMenu").style.width = "0";
       }
 
-      function openPopup(addonName) {
-        document.getElementById('popup-title').textContent = addonName;
-        document.getElementById('popup').style.display = 'block';
-      }
-
-      function closePopup() {
-        document.getElementById('popup').style.display = 'none';
-      }
-      
+            
       // Close popup when clicking outside of it
       // Close popup when clicking outside of it
 window.onclick = function(event) {
@@ -403,6 +395,15 @@ window.onclick = function(event) {
     closePopup();
   }
 }
+
+      function openPopup(addonName) {
+        document.getElementById('popup-title').textContent = addonName;
+        document.getElementById('popup').style.display = 'block';
+      }
+
+      function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+      }
     </script>
   </body>
 </html>
