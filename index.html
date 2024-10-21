@@ -395,13 +395,20 @@
 
       
       
-      function openPopup(addonName, addonSuppVer, addonType addonExpFeatures) {
+      function openPopup(addonName, addonSuppVer, addonType, addonExpFeatures) {
+    // Set the main title
     document.getElementById('popup-title').textContent = addonName;
-    document.getElementById('popup-addon-type').textContent = addonType;
+
+    // Set the supported version
     document.getElementById('popup-supported-version').textContent = addonSuppVer;
+
+    // Set the addon type
+    document.getElementById('popup-addon-type').textContent = addonType;
+
+    // Set the experimental features status
     document.getElementById('popup-exp-features').textContent = addonExpFeatures;
 
-
+    // Show the popup
     document.getElementById('popup').style.display = 'block';
 }
 
