@@ -1,1 +1,380 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Minecraft Bedrock Edition Addons by DarkBlock Gaming">
+    <title>DarkBlock Gaming - Minecraft Bedrock Edition Addons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+      /* Load the custom font */
+      @font-face {
+        font-family: 'MinecraftTen';
+        src: url('fonts/minecraft-ten.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        text-align: center;
+        overflow-x: hidden;
+      }
+
+      /* Apply custom font only to section headings */
+      section h2 {
+        font-family: 'MinecraftTen', sans-serif;
+        /* Use the custom Minecraft font */
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+
+      header img {
+        max-width: 80px;
+        height: auto;
+      }
+
+      header .menu-icon {
+        max-width: 80px;
+        height: auto;
+        cursor: pointer;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+        text-align: center;
+        flex-grow: 1;
+        white-space: nowrap;
+      }
+      
+      
+      section {
+    padding: 50px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 20px 0; /* Adjusted margin for spacing */
+    border-radius: 20px; /* Curvy image corners */
+    display: block; /* Ensures the image is block-level */
+    margin-left: auto; /* Center the image */
+    margin-right: auto; /* Center the image */
+}
+
+section p {
+    margin-bottom: 15px;
+    text-align: left; /* Align text to the left */
+    font-size: 0.9rem; /* Make the text slightly smaller */
+    line-height: 1.5; /* Improve readability */
+    max-width: 600px; /* Limit text width */
+    margin: 0 auto 15px auto; /* Center the text block */
+}
+
+.download-btn {
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: var(--btn-bg-color, linear-gradient(135deg, #3498db, #2980b9)); /* Default background */
+    margin: 0 10px; /* Spacing between buttons */
+}
+
+.download-btn i {
+    margin-right: 4px;
+    font-size: 18px;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.download-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+      
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        margin-top: 50px;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        color: #fff;
+        font-size: 24px;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #e74c3c;
+      }
+
+      /* Popup Modal Styles */
+      .popup {
+        display: none;
+        z-index: 9999;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        /* Use percentage for responsive width */
+        max-width: 500px;
+        /* Limit max width for larger screens */
+        background-color: #fff;
+        padding: 1.5em;
+        /* Use em for padding */
+        box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
+        border-radius: 0.625em;
+        /* Use em for consistent border-radius */
+        text-align: left;
+        font-family: Arial, sans-serif;
+      }
+
+      .popup h4 {
+        margin-top: 0;
+        font-size: 1.25em;
+        /* Relative font size */
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        /* Center the title */
+      }
+
+      .popup p {
+        margin: 0.625em 0;
+        /* Use relative spacing */
+        font-size: 1em;
+        color: #555;
+      }
+
+      .popup p strong {
+        color: #333;
+      }
+
+      .popup-close {
+        cursor: pointer;
+        background-color: #e74c3c;
+        padding: 0.375em 0.75em;
+        /* Use em for padding */
+        border-radius: 0.375em;
+        color: #fff;
+        text-decoration: none;
+        position: absolute;
+        top: 0.75em;
+        right: 0.75em;
+      }
+
+      .popup-close:hover {
+        background-color: #c0392b;
+      }
+
+      /* Keyframes for slide-in animation */
+      @keyframes slide-in {
+        from {
+          transform: translateY(-20px);
+          /* Start slightly above */
+          opacity: 0;
+          /* Start invisible */
+        }
+
+        to {
+          transform: translateY(0);
+          /* End in place */
+          opacity: 1;
+          /* Fully visible */
+        }
+      }
+
+      /* Side menu styling */
+      .side-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .side-menu a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .side-menu a:hover {
+        color: #e74c3c;
+      }
+
+      .side-menu .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 36px;
+        cursor: pointer;
+      }
+
+      /* Media query for mobile devices */
+      @media (max-width: 768px) {
+        header img {
+          max-width: 50px;
+        }
+
+        header h1 {
+          font-size: 1.5rem;
+          margin-top: 0;
+          text-align: center;
+          white-space: nowrap;
+        }
+
+        header .menu-icon {
+          max-width: 50px;
+        }
+
+        .addon-list li img {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="images/dbg/logo.webp" alt="DarkBlock Gaming Logo">
+      <h1>DarkBlock Gaming</h1>
+      <img src="images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
+    </header>
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+      <a href="#addons">Addons</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <!-- Info Popup -->
+    <div class="popup" id="popup">
+      <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
+      <h4 id="popup-title"></h4>
+      <p>
+        <strong>Supported Version:</strong>
+        <span id="popup-supported-version"></span>
+      </p>
+      <p>
+        <strong>Addon Type:</strong>
+        <span id="popup-addon-type"></span>
+      </p>
+      <p>
+        <strong>Experimental Features:</strong>
+        <span id="popup-exp-features"></span>
+      </p>
+    </div>
+    <!-- Addons section -->
+<section id="addon">
+  <h2>ReplayCraft</h2>
+  <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft" style="max-width: 100%; height: auto;">
+  <p>ReplayCraft brings real replay capabilities to Minecraft, making it perfect for recording replays and cinematics of your world. With this add-on, you can capture epic moments and create stunning cinematics with ease.</p>
+  <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('ReplayCraft', '1.21+', 'BP & RP', 'Yes (Beta APIs)')">
+    <i class="fa fa-info-circle"></i> Info
+  </button>
+  <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+    <i class="fa fa-download"></i> Download
+  </button>
+</section>
+    
+
+    <footer>
+      <p>&copy; 2024 DarkBlock Gaming.</p>
+      <div class="social-icons">
+        <a href="https://patreon.com/DarkBlockGaming" target="_blank">
+          <i class="fa-brands fa-patreon"></i>
+        </a>
+        <a href="https://discord.gg/73QxQEdwc5" target="_blank">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+        <a href="https://x.com/darkblockgaming" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://instagram.com/darkblockgaming" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com/@darkblockgaming" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="mailto:contact.darkblock.gaming@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+    <script>
+      function openMenu() {
+        document.getElementById("sideMenu").style.width = "250px";
+      }
+
+      function closeMenu() {
+        document.getElementById("sideMenu").style.width = "0";
+      }
+
+      function openPopup(addonName, addonSuppVer, addonType, addonExpFeatures) {
+        document.getElementById('popup-title').textContent = addonName;
+        document.getElementById('popup-supported-version').textContent = addonSuppVer;
+        document.getElementById('popup-addon-type').textContent = addonType;
+        document.getElementById('popup-exp-features').textContent = addonExpFeatures;
+        document.getElementById('popup').style.display = 'block';
+      }
+
+      function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
