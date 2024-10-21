@@ -6,7 +6,7 @@
     <meta name="description" content="Minecraft Bedrock Edition Addons by DarkBlock Gaming">
     <title>DarkBlock Gaming - Minecraft Bedrock Edition Addons</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <style>
+    <style>
       /* Load the custom font */
       @font-face {
         font-family: 'MinecraftTen';
@@ -23,18 +23,18 @@
         color: #333;
         text-align: center;
         overflow-x: hidden;
-        font-size: 1rem; /* Base font size for scaling */
       }
 
       /* Apply custom font only to section headings */
       section h2 {
         font-family: 'MinecraftTen', sans-serif;
+        /* Use the custom Minecraft font */
       }
 
       header {
         background-color: #333;
         color: #fff;
-        padding: 1rem 2rem;
+        padding: 10px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -42,12 +42,12 @@
       }
 
       header img {
-        max-width: 5rem; /* Scales with screen size */
+        max-width: 80px;
         height: auto;
       }
 
       header .menu-icon {
-        max-width: 5rem;
+        max-width: 80px;
         height: auto;
         cursor: pointer;
       }
@@ -61,12 +61,12 @@
       }
 
       section {
-        padding: 3rem 5%;
+        padding: 50px;
       }
 
       section h2 {
-        font-size: 2.5rem; /* Relative to screen size */
-        margin-bottom: 1.25rem;
+        font-size: 2rem;
+        margin-bottom: 20px;
       }
 
       .addon-list {
@@ -76,32 +76,38 @@
 
       .addon-list li {
         background-color: #fff;
-        margin: 1rem auto;
-        padding: 2rem;
-        max-width: 80%;
-        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-        border-radius: 0.9375rem;
+        margin: 10px auto;
+        padding: 20px;
+        max-width: 600px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
         text-align: center;
+        /* Center the name and download button */
       }
 
       .addon-list li h3 {
         margin-top: 0;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
       }
 
       .addon-list li p {
-        margin-bottom: 1rem;
+        margin-bottom: 15px;
         text-align: left;
-        font-size: 1rem;
-        line-height: 1.6;
+        /* Align text to the left */
+        font-size: 0.9rem;
+        /* Make the text slightly smaller */
+        line-height: 1.5;
+        /* Improve readability */
       }
 
+      /* Add border-radius for curvy images */
       .addon-list li img {
         width: 100%;
         height: auto;
-        max-width: 100%; /* Ensures full responsiveness */
-        margin: 0.625rem 0;
-        border-radius: 1.25rem;
+        max-width: 600px;
+        margin: 10px 0;
+        border-radius: 20px;
+        /* This makes the image corners curvy */
       }
 
       .addon-list li .download-btn {
@@ -109,39 +115,40 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 0.75rem 1.5rem;
+        padding: 12px 16px;
         color: #fff;
-        font-size: 1rem;
+        font-size: 16px;
         font-weight: 600;
         text-transform: uppercase;
         border: none;
-        border-radius: 1.875rem;
-        box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         cursor: pointer;
         transition: all 0.3s ease;
         background: var(--btn-bg-color, linear-gradient(135deg, #3498db, #2980b9));
+        /* Default background */
       }
 
       .addon-list li .download-btn i {
-        margin-right: 0.25rem;
-        font-size: 1.125rem;
+        margin-right: 4px;
+        font-size: 18px;
       }
 
       .addon-list li .download-btn:hover {
-        transform: translateY(-0.1875rem);
-        box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.3);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
       }
 
       .addon-list li .download-btn:active {
-        transform: translateY(0.0625rem);
-        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+        transform: translateY(1px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       }
 
       footer {
         background-color: #333;
         color: #fff;
-        padding: 1.25rem 0;
-        margin-top: 3.125rem;
+        padding: 20px 0;
+        margin-top: 50px;
       }
 
       footer p {
@@ -149,13 +156,13 @@
       }
 
       .social-icons {
-        margin-top: 0.625rem;
+        margin-top: 10px;
       }
 
       .social-icons a {
         color: #fff;
-        font-size: 1.5rem;
-        margin: 0 0.625rem;
+        font-size: 24px;
+        margin: 0 10px;
         text-decoration: none;
         transition: color 0.3s ease;
       }
@@ -173,42 +180,72 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80%;
-        max-width: 31.25rem;
+        /* Use percentage for responsive width */
+        max-width: 500px;
+        /* Limit max width for larger screens */
         background-color: #fff;
-        padding: 1.5rem;
-        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
-        border-radius: 0.625rem;
+        padding: 1.5em;
+        /* Use em for padding */
+        box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
+        border-radius: 0.625em;
+        /* Use em for consistent border-radius */
         text-align: left;
+        font-family: Arial, sans-serif;
       }
 
       .popup h4 {
         margin-top: 0;
-        font-size: 1.25rem;
+        font-size: 1.25em;
+        /* Relative font size */
         font-weight: bold;
         color: #333;
         text-align: center;
+        /* Center the title */
       }
 
       .popup p {
-        margin: 0.625rem 0;
-        font-size: 1rem;
+        margin: 0.625em 0;
+        /* Use relative spacing */
+        font-size: 1em;
         color: #555;
+      }
+
+      .popup p strong {
+        color: #333;
       }
 
       .popup-close {
         cursor: pointer;
         background-color: #e74c3c;
-        padding: 0.375rem 0.75rem;
-        border-radius: 0.375rem;
+        padding: 0.375em 0.75em;
+        /* Use em for padding */
+        border-radius: 0.375em;
         color: #fff;
         text-decoration: none;
         position: absolute;
-        top: 0.75rem;
-        right: 0.75rem;
+        top: 0.75em;
+        right: 0.75em;
       }
 
       .popup-close:hover {
         background-color: #c0392b;
+      }
+
+      /* Keyframes for slide-in animation */
+      @keyframes slide-in {
+        from {
+          transform: translateY(-20px);
+          /* Start slightly above */
+          opacity: 0;
+          /* Start invisible */
+        }
+
+        to {
+          transform: translateY(0);
+          /* End in place */
+          opacity: 1;
+          /* Fully visible */
+        }
       }
 
       /* Side menu styling */
@@ -221,13 +258,13 @@
         background-color: #333;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 3.75rem;
+        padding-top: 60px;
       }
 
       .side-menu a {
-        padding: 0.5rem 2rem;
+        padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 1.25rem;
+        font-size: 25px;
         color: #fff;
         display: block;
         transition: 0.3s;
@@ -239,69 +276,27 @@
 
       .side-menu .close-btn {
         position: absolute;
-        top: 0.625rem;
-        right: 1.5rem;
-        font-size: 2.25rem;
+        top: 10px;
+        right: 25px;
+        font-size: 36px;
         cursor: pointer;
-      }
-
-      /* Media queries for larger screens */
-      @media (min-width: 1024px) {
-        header img {
-          max-width: 6rem;
-        }
-
-        header h1 {
-          font-size: 3rem;
-        }
-
-        section {
-          padding: 5rem 10%;
-        }
-
-        section h2 {
-          font-size: 3rem;
-        }
-
-        .addon-list li {
-          max-width: 60%;
-          padding: 3rem;
-        }
-
-        .addon-list li h3 {
-          font-size: 2rem;
-        }
-
-        .addon-list li p {
-          font-size: 1.125rem;
-        }
-
-        .addon-list li .download-btn {
-          padding: 1rem 2rem;
-          font-size: 1.125rem;
-        }
-
-        footer {
-          padding: 2rem 0;
-        }
-
-        .social-icons a {
-          font-size: 2rem;
-        }
       }
 
       /* Media query for mobile devices */
       @media (max-width: 768px) {
         header img {
-          max-width: 3.125rem;
+          max-width: 50px;
         }
 
         header h1 {
           font-size: 1.5rem;
+          margin-top: 0;
+          text-align: center;
+          white-space: nowrap;
         }
 
         header .menu-icon {
-          max-width: 3.125rem;
+          max-width: 50px;
         }
 
         .addon-list li img {
@@ -324,14 +319,22 @@
       <a href="#contact">Contact</a>
     </div>
     <!-- Info Popup -->
-<div class="popup" id="popup">
-  <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
-  <h4 id="popup-title"></h4>
-  <p><strong>Supported Version:</strong> <span id="popup-supported-version"></span></p>
-  <p><strong>Addon Type:</strong> <span id="popup-addon-type"></span></p>
-  <p><strong>Experimental Features:</strong> <span id="popup-exp-features"></span></p>
-</div>
-    
+    <div class="popup" id="popup">
+      <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
+      <h4 id="popup-title"></h4>
+      <p>
+        <strong>Supported Version:</strong>
+        <span id="popup-supported-version"></span>
+      </p>
+      <p>
+        <strong>Addon Type:</strong>
+        <span id="popup-addon-type"></span>
+      </p>
+      <p>
+        <strong>Experimental Features:</strong>
+        <span id="popup-exp-features"></span>
+      </p>
+    </div>
     <!-- Addons section -->
     <section id="addons">
       <h2>My Add-ons</h2>
@@ -363,7 +366,6 @@
           <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
             <i class="fa fa-download"></i> Download </button>
     </section>
-    
     <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
@@ -401,29 +403,17 @@
         document.getElementById("sideMenu").style.width = "0";
       }
 
-      
-      
       function openPopup(addonName, addonSuppVer, addonType, addonExpFeatures) {
-    // Set the main title
-    document.getElementById('popup-title').textContent = addonName;
+        document.getElementById('popup-title').textContent = addonName;
+        document.getElementById('popup-supported-version').textContent = addonSuppVer;
+        document.getElementById('popup-addon-type').textContent = addonType;
+        document.getElementById('popup-exp-features').textContent = addonExpFeatures;
+        document.getElementById('popup').style.display = 'block';
+      }
 
-    // Set the supported version
-    document.getElementById('popup-supported-version').textContent = addonSuppVer;
-
-    // Set the addon type
-    document.getElementById('popup-addon-type').textContent = addonType;
-
-    // Set the experimental features status
-    document.getElementById('popup-exp-features').textContent = addonExpFeatures;
-
-    // Show the popup
-    document.getElementById('popup').style.display = 'block';
-}
-
-function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-}
-
+      function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+      }
     </script>
   </body>
 </html>
