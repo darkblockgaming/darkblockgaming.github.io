@@ -320,7 +320,7 @@
   <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
   <h4 id="popup-title"></h4>
 
-  <p><strong>Supported Version:</strong> <span id="supported-version">1.18+</span></p>
+  <p><strong>Supported Version:</strong> <span id="supported-version"> id="addon-supp-ver"</span></p>
   <p><strong>Addon Type:</strong> <span id="addon-type">Behavior Pack</span></p>
   <p><strong>Experimental Feature:</strong> <span id="experimental-feature">Yes</span></p>
   
@@ -395,8 +395,9 @@
         document.getElementById("sideMenu").style.width = "0";
       }
 
-      function openPopup(addonName) {
+      function openPopup(addonName, addonSuppVer) {
         document.getElementById('popup-title').textContent = addonName;
+        document.getElementById('addon-supp-ver').textContent = addonSuppVer;
         document.getElementById('popup').style.display = 'block';
       }
 
