@@ -179,7 +179,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 300px;
+        width: 250px;
         background-color: #fff;
         padding: 20px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -220,6 +220,9 @@
       .popup-close:hover {
         background-color: #c0392b;
       }
+      
+      
+      
 
       /* Keyframes for slide-in animation */
       @keyframes slide-in {
@@ -310,13 +313,16 @@
     </div>
     <!-- Info Popup -->
     <div class="popup" id="popup">
-      <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
-      <h4 id="popup-title"></h4>
-      <a href="https://example.com/info1" class="popup-btn" target="_blank">Know More 1</a>
-      <a href="https://example.com/info2" class="popup-btn" target="_blank">Know More 2</a>
-      <a href="https://example.com/download" class="popup-btn" target="_blank">
-        <i class="fa fa-download"></i>Download File </a>
-    </div>
+  <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
+  <h4 id="popup-title"></h4>
+
+  <p><strong>Supported Version:</strong> <span id="supported-version">1.18+</span></p>
+  <p><strong>Addon Type:</strong> <span id="addon-type">Behavior Pack</span></p>
+  <p><strong>Experimental Feature:</strong> <span id="experimental-feature">Yes</span></p>
+  
+</div>
+    
+    <!-- Addons section -->
     <section id="addons">
       <h2>My Add-ons</h2>
       <ul class="addon-list">
@@ -347,6 +353,8 @@
           <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
             <i class="fa fa-download"></i> Download </button>
     </section>
+    
+    <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
       <p>Hello! I create addons for Minecraft Bedrock Edition. Check out my work and feel free to reach out if you'd like to collaborate.</p>
@@ -392,29 +400,6 @@
         document.getElementById('popup').style.display = 'none';
       }
 
-
-      const popup = document.getElementById("popup");
-const popupButton = document.getElementById("popupButton");
-const closeButton = document.getElementById("closeButton");
-
-
-
-// Close the popup when clicking on the close button
-closeButton.onclick = closePopup;
-
-// Close the popup when clicking the popup button
-popupButton.onclick = openPopup;
-
-// Function to handle click events outside the popup
-function handleClickOutside(event) {
-    // Check if the click is outside the popup and the button
-    if (popup.style.display === "block" && !popup.contains(event.target) && event.target !== popupButton) {
-        closePopup(); // Close the popup
-    }
-}
-
-// Add event listener to the document for clicks
-document.addEventListener("click", handleClickOutside);
     </script>
   </body>
 </html>
