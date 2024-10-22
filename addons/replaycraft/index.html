@@ -89,29 +89,17 @@
             margin: 0 auto 15px auto; /* Center the text block */
         }
 
-        .button-container {
-            border: 2px solid #ccc; /* Border for the box */
-            padding: 20px; /* Space inside the box */
-            display: flex; /* Use flexbox to align items */
-            justify-content: center; /* Center the buttons horizontally */
-            align-items: center; /* Vertically center the content */
-            border-radius: 10px; /* Rounded corners */
-            background-color: #f9f9f9; /* Background color for the box */
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Optional: Box shadow */
-            margin-top: 20px; /* Space above the container */
-            max-width: 100%; /* Make sure the box doesn't exceed the parent width */
-            margin-left: auto; /* Center the container */
-            margin-right: auto; /* Center the container */
-        }
 
         .download-btn {
             z-index: 1;
             display: inline-flex;
             align-items: center;
+            gap: 6px;
+            outline: none;
             justify-content: center;
             padding: 12px 18px;
             color: #fff;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
             text-transform: uppercase;
             border: none;
@@ -121,24 +109,10 @@
             transition: all 0.3s ease;
             background: var(--btn-bg-color, linear-gradient(135deg, #3498db, #2980b9)); /* Default background */
             margin: 0 10px; /* Spacing between buttons */
+            white-space: nowrap;
         }
 
-        .download-btn i {
-            margin-right: 4px;
-            font-size: 18px;
-        }
 
-        .download-btn i2 {
-            margin-left: 16px;
-            font-size: 18px;
-        }
-
-        .modbay-icon {
-            width: 18px; /* Match the Font Awesome icon size */
-            height: 18px; /* Match the Font Awesome icon size */
-            vertical-align: middle; /* Aligns the image vertically with the text */
-            margin-right: 4px; /* Optional: adds space between the icon and text */
-        }
 
         .download-btn:hover {
             transform: translateY(-3px);
@@ -149,6 +123,16 @@
             transform: translateY(1px);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+        
+.button-image {
+    width: 1em; /* Set a fixed width */
+    height: 1em; /* Set a fixed height */
+    vertical-align: middle; /* Aligns the image vertically with the text */
+    display: inline-block; /* Ensures it behaves like text */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    scale: 1.5;
+}
 
         footer {
             background-color: #333;
@@ -358,28 +342,31 @@
 </div>
 
   
-  <div>
- 	<a href="https://mcpedl.com/replaycraft/" style="text-decoration: none;">
-        <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #21511B, #00A52E); margin-bottom: 8px;">
-            <i class="fa fa-arrow-up-right-from-square"></i> Visit On MCPEDL <i2 class="fa fa-arrow-up-right-from-square"></i2>
-        </button>
-    </a>
-</div>
+
 <div>
-	<a href="https://www.curseforge.com/minecraft-bedrock/scripts/replaycraft" style="text-decoration: none;">
-    <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #515151, #000000); margin-bottom: 8px;">
-      <i class="fa fa-arrow-up-right-from-square"></i> Visit On Curseforge <i2 class="fa fa-arrow-up-right-from-square"></i2>
-    </button>
+    <a href="https://mcpedl.com/replaycraft/" style="text-decoration: none;">
+        <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #21511B, #00A52E); margin-bottom: 8px;">
+            <img class="button-image" src="../../images/dbg/mcpedllogo.webp" > Visit On MCPEDL <i class="fa fa-arrow-up-right-from-square"></i>
+        </button>
     </a>
 </div>
 
 <div>
-	<a href="https://modbay.org/mods/1591-replaycraft.html" style="text-decoration: none;">
-    <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #2F233C, #0056a6);">
-      <img src="../../images/dbg/logo.webp" alt="MCPEDL-LOGO" class="mcpedl-icon"> Visit On Modbay <i2 class="fa fa-arrow-up-right-from-square"></i2>
+	<a href="https://www.curseforge.com/minecraft-bedrock/scripts/replaycraft" style="text-decoration: none;">
+    <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #515151, #000000); margin-bottom: 8px;">
+      <img class="button-image" src="../../images/dbg/curseforgelogo.webp" > Visit On Curseforge <i class="fa fa-arrow-up-right-from-square"></i>
     </button>
     </a>
 </div>
+<div>
+	
+	<a href="https://www.curseforge.com/minecraft-bedrock/scripts/replaycraft" style="text-decoration: none;">
+    <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #251B2E, #6F21A6); margin-bottom: 8px;">
+      <img class="button-image" src="../../images/dbg/modbayllogo.webp" ></img> Visit On ModBay <i class="fa fa-arrow-up-right-from-square"></i>
+    </button>
+    </a>
+</div>
+
 
 
 
