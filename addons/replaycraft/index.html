@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ReplayCraft replay & cinematic add-on for Minecraft Bedrock Edition">
+    <meta name="description" content="Experience Minecraft like never before with ReplayCraft, the ultimate replay & cinematic add-on for Minecraft Bedrock Edition. Perfect for builders and filmmakers!">
     <meta name="keywords" content="Minecraft, Bedrock Edition, Addons, ReplayCraft, Cinematic">
     <meta name="author" content="DarkBlock Gaming">
     <title>ReplayCraft: Replay & Cinematic Add-on for MCPE</title>
-    
     <!-- Social Media Integration for better sharing -->
     <meta property="og:title" content="ReplayCraft Add-on">
     <meta property="og:description" content="ReplayCraft replay & cinematic add-on for Minecraft Bedrock Edition.">
@@ -23,12 +23,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <!-- Favicon -->
     <link rel="icon" href="https://darkblockgaming.github.io/images/dbg/logo.webp" type="image/webp">
-    <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script><script>linkvertise(506545, {whitelist: ["mediafire.com"], blacklist: []});</script>
+    <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
+    <script>
+      linkvertise(506545, {
+        whitelist: ["mediafire.com"],
+        blacklist: []
+      });
+    </script>
     <style>
       /* Load the custom font */
       @font-face {
         font-family: 'MinecraftTen';
-        src: url('../../fonts/minecraft-ten.ttf') format('truetype');
+        src: url('https://darkblockgaming.github.io/fonts/minecraft-ten.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
       }
@@ -43,12 +49,6 @@
         overflow-x: hidden;
       }
 
-      /* Apply custom font only to section headings */
-      section h2 {
-        font-family: 'MinecraftTen', sans-serif;
-        /* Use the custom Minecraft font */
-      }
-
       header {
         background-color: #333;
         color: #fff;
@@ -57,6 +57,7 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: nowrap;
+        margin-bottom: 30px;
       }
 
       header img {
@@ -79,47 +80,80 @@
       }
 
       section {
-        padding: 30px;
+        padding: 0px;
+      }
+
+      section h1 {
+        margin-top: 0px;
       }
 
       section h2 {
         font-size: 2rem;
-        margin-bottom: 20px;
+        margin: 0;
         text-align: center;
-        /* Center the title */
+        font-family: 'MinecraftTen', sans-serif;
+      }
+
+      section h3 {
+        white-space: nowrap;
       }
 
       section img {
         width: 100%;
         height: auto;
         max-width: 100%;
-        margin: 20px 0;
-        /* Adjusted margin for spacing */
+        margin: 0;
         border-radius: 5px;
-        /* Curvy image corners */
         display: block;
-        /* Ensures the image is block-level */
         margin-left: auto;
-        /* Center the image */
         margin-right: auto;
-        /* Center the image */
       }
 
       section p {
-        margin-bottom: 15px;
         text-align: left;
-        /* Align text to the left */
         font-size: 0.9rem;
-        /* Make the text slightly smaller */
         line-height: 1.5;
-        /* Improve readability */
         max-width: 100%;
-        /* Limit text width */
-        margin: 0 auto 15px auto;
-        /* Center the text block */
+        margin: 0;
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+      
+      section .btn-box {
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 20px;
+        width: 80%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+      }
+      
+      section .btn-placer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        row-gap: 10px;
+        white-space: nowrap;
+      }
+
+      section .btn-div1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+      }
+
+      section .btn-div1 h3 {
+        color: #74BBB4;
+        margin: 0;
+        padding: 2px;
       }
 
       .download-btn {
+        width: auto;
         z-index: 1;
         display: inline-flex;
         align-items: center;
@@ -128,7 +162,7 @@
         justify-content: center;
         padding: 12px 18px;
         color: #fff;
-        font-size: 14px;
+        font-size: 1em;
         font-weight: 600;
         text-transform: uppercase;
         border: none;
@@ -137,9 +171,6 @@
         cursor: pointer;
         transition: all 0.3s ease;
         background: var(--btn-bg-color, linear-gradient(135deg, #3498db, #2980b9));
-        /* Default background */
-        margin: 0 10px;
-        /* Spacing between buttons */
         white-space: nowrap;
       }
 
@@ -155,19 +186,12 @@
 
       .button-image {
         width: 20px;
-        /* Set a fixed width */
         height: 20px;
-        /* Set a fixed height */
         vertical-align: middle;
-        /* Aligns the image vertically with the text */
         display: inline-block;
-        /* Ensures it behaves like text */
         margin: 0;
-        /* Remove any default margin */
         padding: 0;
-        /* Remove any default padding */
         border-radius: 1px;
-        /* Ensure no border-radius is applied */
       }
 
       footer {
@@ -197,84 +221,19 @@
         color: #e74c3c;
       }
 
-      /* Popup Modal Styles */
-      .popup {
-        display: none;
-        z-index: 9999;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-        /* Use percentage for responsive width */
-        max-width: 500px;
-        /* Limit max width for larger screens */
-        background-color: #fff;
-        padding: 1.5em;
-        /* Use em for padding */
-        box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
-        border-radius: 0.625em;
-        /* Use em for consistent border-radius */
-        text-align: left;
-        font-family: Arial, sans-serif;
-      }
-
-      .popup h4 {
-        margin-top: 0;
-        font-size: 1.25em;
-        /* Relative font size */
-        font-weight: bold;
-        color: #333;
-        text-align: center;
-        /* Center the title */
-      }
-
-      .popup p {
-        margin: 0.625em 0;
-        /* Use relative spacing */
-        font-size: 1em;
-        color: #555;
-      }
-
-      .popup p strong {
-        color: #333;
-      }
-
-      .popup-close {
-        cursor: pointer;
-        background-color: #e74c3c;
-        padding: 0.375em 0.75em;
-        /* Use em for padding */
-        border-radius: 0.375em;
-        color: #fff;
-        text-decoration: none;
-        position: absolute;
-        top: 0.75em;
-        right: 0.75em;
-      }
-
-      .popup-close:hover {
-        background-color: #c0392b;
-      }
-
       /* Keyframes for slide-in animation */
       @keyframes slide-in {
         from {
           transform: translateY(-20px);
-          /* Start slightly above */
           opacity: 0;
-          /* Start invisible */
         }
 
         to {
           transform: translateY(0);
-          /* End in place */
           opacity: 1;
-          /* Fully visible */
         }
       }
 
-      /* Side menu styling */
       .side-menu {
         z-index: 9999;
         height: 100%;
@@ -309,7 +268,6 @@
         cursor: pointer;
       }
 
-      /* Media query for mobile devices */
       @media (max-width: 768px) {
         header img {
           max-width: 50px;
@@ -325,77 +283,83 @@
         header .menu-icon {
           max-width: 50px;
         }
-
-        .addon-list li img {
-          max-width: 100%;
-        }
       }
     </style>
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <img src="../../images/dbg/logo.webp" alt="DarkBlock Gaming Logo">
+      <img src="https://darkblockgaming.github.io/images/dbg/logo.webp" alt="DarkBlock Gaming Logo">
       <h1>DarkBlock Gaming</h1>
-      <img src="../../images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
+      <img src="https://darkblockgaming.github.io/images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
     </header>
     <!-- Side Menu -->
     <div id="sideMenu" class="side-menu">
       <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
-      <a href="#addons">Addons</a>
-      <a href="#about">About</a>
+      <a href="#about-addon">About Addon</a>
+      <a href="#addon-downloads">Downloads</a>
+      <a href="#addon-know-More">Know More</a>
       <a href="#contact">Contact</a>
     </div>
-    <!-- Info Popup -->
-    <div class="popup" id="popup">
-      <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
-      <h4 id="popup-title"></h4>
-      <p>
-        <strong>Supported Version:</strong>
-        <span id="popup-supported-version"></span>
-      </p>
-      <p>
-        <strong>Addon Type:</strong>
-        <span id="popup-addon-type"></span>
-      </p>
-      <p>
-        <strong>Experimental Features:</strong>
-        <span id="popup-exp-features"></span>
-      </p>
-    </div>
-    <!-- Addons section -->
-    <section id="addon">
-      <h2>ReplayCraft</h2>
-      <p>ReplayCraft brings real replay capabilities to Minecraft, making it perfect for recording replays and cinematics of your world. With this add-on, you can capture epic moments and create stunning cinematics with ease.</p>
-      <img src="../../images/thumbnails/replaycraft.webp" alt="ReplayCraft" style="max-width: 100%; height: auto;">
-      <h1>Download & Know More...</h1>
-      <div style="margin-top: 10px;">
-        <a href="https://www.mediafire.com/file/typ1l4422qcto5c/ReplayCraft_v2.0.6-beta.mcaddon/file" style="text-decoration: none;">
-          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c); margin-bottom: 24px; padding: 15px 24px; font-size: 18px; transform: scale(1.2);">
-            <i class="fa fa-download"></i> Download </button>
-        </a>
-      </div>
-      <div>
-        <a href="https://www.curseforge.com/minecraft-bedrock/scripts/replaycraft" style="text-decoration: none;">
-          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #515151, #000000); margin-bottom: 8px;">
-            <img class="button-image" src="../../images/dbg/curseforgelogo.webp"> Visit On Curseforge <i class="fa fa-arrow-up-right-from-square"></i>
-          </button>
-        </a>
-      </div>
-      <div>
-        <a href="https://mcpedl.com/replaycraft/" style="text-decoration: none;">
-          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #21511B, #00A52E); margin-bottom: 8px;">
-            <img class="button-image" src="../../images/dbg/mcpedllogo.webp"> Visit On MCPEDL <i class="fa fa-arrow-up-right-from-square"></i>
-          </button>
-        </a>
-      </div>
-      <div>
-        <a href="https://www.curseforge.com/minecraft-bedrock/scripts/replaycraft" style="text-decoration: none;">
-          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #251B2E, #6F21A6); margin-bottom: 8px;">
-            <img class="button-image" src="../../images/dbg/modbaylogo.webp"></img> Visit On ModBay <i class="fa fa-arrow-up-right-from-square"></i>
-          </button>
-        </a>
+    <!-- Addon section -->
+    <section id="about-addon">
+      <div class="btn-box">
+        <h2>ReplayCraft</h2>
+        <p>ReplayCraft is a unique add-on that brings real replay capabilities to the game, made primarily for recording building sessions and creating stunning cinematics of your world. Capture every block placement, epic moment, and creative scene with ease, bringing your builds to life with smooth replays and full cinematic control to record any activity in-game. Whether you're showcasing complex structures, capturing group projects, or creating cinematic sequences of adventures, ReplayCraft adds a new dimension to Minecraft storytelling—perfect for builders, filmmakers, and content creators alike.</p>
+        <img src="https://darkblockgaming.github.io/images/thumbnails/replaycraft.webp" alt="ReplayCraft Add-on in Minecraft">
       </div>
     </section>
+    <!-- Addon downloads -->
+    <section id="addon-downloads">
+      <div class="btn-box">
+        <h1>Download...</h1>
+        <div class="btn-placer">
+          <div class="btn-div1">
+            <h3>v2.0.6-beta</h3>
+            <a href="https://www.mediafire.com/folder/mdo850v7cjux7/ReplayCraft+2.0+Beta" style="text-decoration: none;">
+              <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+                <i class="fa fa-download"></i> Download </button>
+            </a>
+          </div>
+          <div class="btn-div1">
+            <h3>v1.7.0</h3>
+            <a href="https://www.mediafire.com/folder/dakyx3kvy8la4/ReplayCraft+v1.6.0" style="text-decoration: none;">
+              <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c)">
+                <i class="fa fa-download"></i> Download </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Addon know more -->
+    <section id="addon-know-More">
+      <div class="btn-box">
+        <h1>Know More & Download...</h1>
+        <p style="color: red; font-weight: bold; text-align: center;">Click Curseforge for direct Download</p>
+        <div class="btn-placer">
+          <div>
+            <a href="https://www.curseforge.com/minecraft-bedrock/scripts/replaycraft" style="text-decoration: none;">
+              <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #515151, #000000);">
+                <img class="button-image" src="https://darkblockgaming.github.io/images/dbg/curseforgelogo.webp"> Visit On Curseforge <i class="fa fa-arrow-up-right-from-square"></i>
+              </button>
+            </a>
+          </div>
+          <a href="https://mcpedl.com/replaycraft/" style="text-decoration: none;">
+            <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #21511B, #00A52E);">
+              <img class="button-image" src="https://darkblockgaming.github.io/images/dbg/mcpedllogo.webp"> Visit On MCPEDL <i class="fa fa-arrow-up-right-from-square"></i>
+            </button>
+          </a>
+          <div>
+            <a href="https://www.curseforge.com/minecraft-bedrock/scripts/replaycraft" style="text-decoration: none;">
+              <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #251B2E, #6F21A6);">
+                <img class="button-image" src="https://darkblockgaming.github.io/images/dbg/modbaylogo.webp"> Visit On ModBay <i class="fa fa-arrow-up-right-from-square"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
     <footer>
       <p>&copy; 2024 DarkBlock Gaming.</p>
       <div class="social-icons">
@@ -419,14 +383,5 @@
         </a>
       </div>
     </footer>
-    <script>
-      function openMenu() {
-        document.getElementById("sideMenu").style.width = "250px";
-      }
-
-      function closeMenu() {
-        document.getElementById("sideMenu").style.width = "0";
-      }
-    </script>
   </body>
 </html>
