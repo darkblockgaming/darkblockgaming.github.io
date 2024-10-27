@@ -3,15 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Improved Meta Description for SEO -->
     <meta name="description" content="Discover and download Minecraft Bedrock Edition Addons and Mods by DarkBlock Gaming. Enhance your gameplay with our unique creations and tutorials.">
-    <!-- Optimized Title for Keywords -->
     <title>DarkBlock Gaming | Minecraft Bedrock Edition Addons, Mods, and Tutorials</title>
-    <!-- Add relevant keywords for SEO -->
     <meta name="keywords" content="Minecraft Bedrock, Addons, Mods, Minecraft Mods, DarkBlock Gaming, Minecraft Addons, Tutorials, Minecraft Documentation">
-    <!-- Add Author for SEO -->
     <meta name="author" content="DarkBlock Gaming">
-    <!-- Social Media Integration for better sharing -->
     <meta property="og:title" content="DarkBlock Gaming - Minecraft Bedrock Addons and Tutorials">
     <meta property="og:description" content="Download the latest Minecraft Bedrock Edition addons, mods, and learn with tutorials by DarkBlock Gaming.">
     <meta property="og:image" content="https://darkblockgaming.github.io/images/dbg/logo.webp">
@@ -22,17 +17,18 @@
     <meta name="twitter:title" content="DarkBlock Gaming - Minecraft Bedrock Addons and Mods">
     <meta name="twitter:description" content="Explore Minecraft Bedrock Edition Addons and Tutorials by DarkBlock Gaming.">
     <meta name="twitter:image" content="https://darkblockgaming.github.io/images/dbg/logo.webp">
-    <!-- Font Awesome Stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- Favicon -->
     <link rel="icon" href="https://darkblockgaming.github.io/images/dbg/logo.webp" type="image/webp">
     <style>
       /* Load the custom font */
       @font-face {
         font-family: 'MinecraftTen';
-        src: url('fonts/minecraft-ten.ttf') format('truetype');
+        src: url('https://darkblockgaming.github.io/fonts/minecraft-ten.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
+      }
+      html {
+      	
       }
 
       body {
@@ -43,12 +39,6 @@
         color: #333;
         text-align: center;
         overflow-x: hidden;
-      }
-
-      /* Apply custom font only to section headings */
-      section h2 {
-        font-family: 'MinecraftTen', sans-serif;
-        /* Use the custom Minecraft font */
       }
 
       header {
@@ -79,93 +69,20 @@
         flex-grow: 1;
         white-space: nowrap;
       }
-
+      
       section {
-        padding: 50px;
+        padding-top: 50px;
       }
 
       section h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-      }
-
-      .addon-list {
-        list-style: none;
-        padding: 0;
-      }
-
-      .addon-list li {
-        background-color: #fff;
-        margin: 10px auto;
-        padding: 20px;
-        max-width: 600px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-        text-align: center;
-        /* Center the name and download button */
-      }
-
-      .addon-list li h3 {
-        margin-top: 0;
-        font-size: 1.5rem;
-      }
-
-      .addon-list li p {
-        margin-bottom: 15px;
-        text-align: left;
-        /* Align text to the left */
-        font-size: 0.9rem;
-        /* Make the text slightly smaller */
-        line-height: 1.5;
-        /* Improve readability */
-      }
-
-      /* Add border-radius for curvy images */
-      .addon-list li img {
-        width: 100%;
-        height: auto;
-        max-width: 600px;
-        margin: 10px 0;
-        border-radius: 20px;
-        /* This makes the image corners curvy */
-      }
-
-      .addon-list li .download-btn {
-        z-index: 1;
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-        outline: none;
-        justify-content: center;
-        padding: 12px 16px;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 600;
-        text-transform: uppercase;
-        border: none;
-        border-radius: 30px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        transition: all 0.3s ease;
-        background: var(--btn-bg-color, linear-gradient(135deg, #3498db, #2980b9));
-        /* Default background */
-      }
-
-      .addon-list li .download-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      }
-
-      .addon-list li .download-btn:active {
-        transform: translateY(1px);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        font-family: 'MinecraftTen', sans-serif;
       }
 
       footer {
         background-color: #333;
         color: #fff;
         padding: 20px 0;
-        margin-top: 50px;
+        margin-top: 30px;
       }
 
       footer p {
@@ -188,85 +105,20 @@
         color: #e74c3c;
       }
 
-      /* Popup Modal Styles */
-      .popup {
-        display: none;
-        z-index: 9999;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-        /* Use percentage for responsive width */
-        max-width: 500px;
-        /* Limit max width for larger screens */
-        background-color: #fff;
-        padding: 1.5em;
-        /* Use em for padding */
-        box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
-        border-radius: 0.625em;
-        /* Use em for consistent border-radius */
-        text-align: left;
-        font-family: Arial, sans-serif;
-      }
-
-      .popup h4 {
-        margin-top: 0;
-        font-size: 1.25em;
-        /* Relative font size */
-        font-weight: bold;
-        color: #333;
-        text-align: center;
-        /* Center the title */
-      }
-
-      .popup p {
-        margin: 0.625em 0;
-        /* Use relative spacing */
-        font-size: 1em;
-        color: #555;
-      }
-
-      .popup p strong {
-        color: #333;
-      }
-
-      .popup-close {
-        cursor: pointer;
-        background-color: #e74c3c;
-        padding: 0.375em 0.75em;
-        /* Use em for padding */
-        border-radius: 0.375em;
-        color: #fff;
-        text-decoration: none;
-        position: absolute;
-        top: 0.75em;
-        right: 0.75em;
-      }
-
-      .popup-close:hover {
-        background-color: #c0392b;
-      }
-
-      /* Keyframes for slide-in animation */
       @keyframes slide-in {
         from {
           transform: translateY(-20px);
-          /* Start slightly above */
           opacity: 0;
-          /* Start invisible */
         }
 
         to {
           transform: translateY(0);
-          /* End in place */
           opacity: 1;
-          /* Fully visible */
         }
       }
 
-      /* Side menu styling */
       .side-menu {
+        z-index: 9999;
         height: 100%;
         width: 0;
         position: fixed;
@@ -299,7 +151,6 @@
         cursor: pointer;
       }
 
-      /* Media query for mobile devices */
       @media (max-width: 768px) {
         header img {
           max-width: 50px;
@@ -315,79 +166,135 @@
         header .menu-icon {
           max-width: 50px;
         }
+      }
 
-        .addon-list li img {
-          max-width: 100%;
-        }
+      section#my-addons h1 {
+        margin-top: 0px;
+      }
+
+      section#my-addons h2 {
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+        font-family: sans-serif;
+      }
+
+      section#my-addons h3 {
+        white-space: nowrap;
+      }
+
+      section#my-addons .gallery-box {
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 20px;
+        width: 80%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+      }
+
+      section#my-addons .gallery-container {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 10px;
+        scroll-snap-type: x mandatory;
+      }
+
+      section#my-addons .gallery-item {
+        scroll-snap-align: center;
+        flex: 0 0 auto;
+        background-color: #f0f0f0;
+        margin: 10px auto;
+        padding: 20px;
+        width: 80%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+      }
+      
+      section#my-addons .gallery-item img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        display: block;
+      }
+
+
+      section#my-addons .gallery-item p {
+  white-space: normal;
+  overflow-wrap: break-word;
+  margin: 0;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+
+      section#my-addons .gallery-item h2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
       }
     </style>
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <img src="images/dbg/logo.webp" alt="DarkBlock Gaming Logo">
+      <img src="https://darkblockgaming.github.io/images/dbg/logo.webp" alt="DarkBlock Gaming Logo">
       <h1>DarkBlock Gaming</h1>
-      <img src="images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
+      <img src="https://darkblockgaming.github.io/images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
     </header>
     <!-- Side Menu -->
     <div id="sideMenu" class="side-menu">
       <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
-      <a href="#addons">Addons</a>
+      <a href="#addons-doc">Addon Dev Guide</a>
+      <a href="#my-addons">My Addons</a>
       <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="mailto:contact.darkblock.gaming@gmail.com">Contact</a>
     </div>
-    <!-- Info Popup -->
-    <div class="popup" id="popup">
-      <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
-      <h4 id="popup-title"></h4>
-      <p>
-        <strong>Supported Version:</strong>
-        <span id="popup-supported-version"></span>
-      </p>
-      <p>
-        <strong>Addon Type:</strong>
-        <span id="popup-addon-type"></span>
-      </p>
-      <p>
-        <strong>Experimental Features:</strong>
-        <span id="popup-exp-features"></span>
-      </p>
-    </div>
-    <!-- Addons section -->
-    <section id="addons">
-      <h2>My Add-ons</h2>
-      <ul class="addon-list">
-        <li>
-          <h3>ReplayCraft</h3>
-          <p>ReplayCraft has real replay capabilities, this add-on is great to record replays & cinematics of your world.</p>
-          <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft">
-          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('ReplayCraft', '1.21+', 'BP & RP', 'Yes (Beta APIs)')">
-            <i class="fa fa-info-circle"></i> Info </button>
-          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
-            <i class="fa fa-download"></i> Download </button>
-        </li>
-        <li>
-          <h3>More Camera Perspectives</h3>
-          <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
-          <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
-          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('More Camera Perspectives', '1.21+', 'BP', 'None')">
-            <i class="fa fa-info-circle"></i> Info </button>
-          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
-            <i class="fa fa-download"></i> Download </button>
-        </li>
-        <li>
-          <h3>Player Spectator</h3>
-          <p>This add-on adds many cool & useful camera perspectives, such as dynamic TPP and many customization options.</p>
-          <img src="images/thumbnails/morecampers.webp" alt="MoreCamPers">
-          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('Player Spectator', '1.21+', 'BP', 'None')">
-            <i class="fa fa-info-circle"></i> Info </button>
-          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
-            <i class="fa fa-download"></i> Download </button>
+    <!-- Addons doc -->
+    <section id="addons-doc">
+      <h2>Add-on Development Guide</h2>
+      <p>Coming very soon.....</p>
+    </section>
+    
+    <!-- Add-ons Gallery -->
+    <section id="my-addons">
+      <div class="gallery-box">
+        <div>
+          <h2 style="font-family: 'MinecraftTen', sans-serif; margin-top:0" ;>My Add-ons</h2>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item" data-link="https://darkblockgaming.github.io/addons/replaycraft/">
+            <h2>ReplayCraft</h2>
+            <img src="https://darkblockgaming.github.io/images/thumbnails/replaycraft.webp" alt="ReplayCraft">
+            <p>ReplayCraft is a unique add-on that brings real replay capabilities to the game, made primarily for recording building sessions and creating stunning cinematics of your world. Capture every block placement, epic moment, and creative scene with ease, bringing your builds to life with smooth replays and full cinematic control to record any activity in-game. Whether you're showcasing complex structures, capturing group projects, or creating cinematic sequences of adventures, ReplayCraft adds a new dimension to Minecraft storytelling—perfect for builders, filmmakers, and content creators alike.</p>
+          </div>
+          <div class="gallery-item" data-link="https://darkblockgaming.github.io/addons/replaycraft/">
+            <h2>More Camera Perspectives</h2>
+            <img src="https://darkblockgaming.github.io/images/thumbnails/morecampers.webp" alt="MoreCamPers">
+            <p>More Camera Perspectives is a powerful add-on that transforms how players enjoy their world by introducing a variety of customizable camera angles and perspectives beyond the standard views. Each camera offers extensive customization options, and you can even create your own unique angles, giving you complete control over how you capture and experience Minecraft. Perfect for recording creative cinematics, this add-on enhances gameplay and allows for immersive exploration. Whether you're looking to capture stunning visuals or simply enjoy your adventures from fresh perspectives, More Camera Perspectives is ideal for everyone and must try it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Add more items as needed -->
     </section>
     <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
       <p>Hello! I create addons for Minecraft Bedrock Edition. Check out my work and feel free to reach out if you'd like to collaborate.</p>
     </section>
+    <!-- Footer -->
     <footer>
       <p>&copy; 2024 DarkBlock Gaming.</p>
       <div class="social-icons">
@@ -419,18 +326,15 @@
       function closeMenu() {
         document.getElementById("sideMenu").style.width = "0";
       }
-
-      function openPopup(addonName, addonSuppVer, addonType, addonExpFeatures) {
-        document.getElementById('popup-title').textContent = addonName;
-        document.getElementById('popup-supported-version').textContent = addonSuppVer;
-        document.getElementById('popup-addon-type').textContent = addonType;
-        document.getElementById('popup-exp-features').textContent = addonExpFeatures;
-        document.getElementById('popup').style.display = 'block';
-      }
-
-      function closePopup() {
-        document.getElementById('popup').style.display = 'none';
-      }
+      
+      document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const link = item.getAttribute('data-link');
+    if (link) {
+      window.open(link, '_blank');
+    }
+  });
+});
     </script>
   </body>
 </html>
