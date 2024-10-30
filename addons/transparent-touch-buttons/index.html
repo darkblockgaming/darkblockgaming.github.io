@@ -1,1 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Experience a minimalist approach to Minecraft Bedrock Edition with the Mera Second Resource Pack. Featuring clean, sleek textures, this pack enhances gameplay visuals for immersive exploration and building.">
+<meta name="keywords" content="Minecraft, Bedrock Edition, Mera Second, Minimalist, Clean Textures, Resource Pack, Enhanced Graphics">
+<meta name="author" content="DarkBlock Gaming">
+<title>Mera Second: Minimalist Resource Pack for Minecraft Bedrock Edition</title>
+<!-- Social Media Integration for better sharing -->
+<meta property="og:title" content="Mera Second Resource Pack for Minecraft Bedrock Edition">
+<meta property="og:description" content="Transform your Minecraft world with Mera Second’s minimalist textures. Ideal for a clean, immersive gameplay experience on Minecraft Bedrock Edition.">
+<meta property="og:image" content="../../images/dbg/logo.webp">
+<meta property="og:url" content="https://darkblockgaming.github.io/">
+<meta property="og:type" content="website">
+<!-- Twitter Card Meta for Social Sharing -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mera Second: Minimalist Resource Pack">
+<meta name="twitter:description" content="Enjoy clean and simple textures with the Mera Second Resource Pack for Minecraft Bedrock Edition. Ideal for players seeking a refined, immersive experience!">
+<meta name="twitter:image" content="../../images/dbg/logo.webp">
+    <!-- Font Awesome Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../../images/dbg/logo.webp" type="image/webp">
+    <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
+    <script>
+      linkvertise(506545, {
+        whitelist: ["mediafire.com"],
+        blacklist: []
+      });
+    </script>
+    <style>
+      /* Load the custom font */
+      @font-face {
+        font-family: 'MinecraftTen';
+        src: url('../../fonts/minecraft-ten.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
 
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        text-align: center;
+        overflow-x: hidden;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-bottom: 30px;
+      }
+
+      header img {
+        max-width: 80px;
+        height: auto;
+      }
+
+      header .menu-icon {
+        max-width: 80px;
+        height: auto;
+        cursor: pointer;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+        text-align: center;
+        flex-grow: 1;
+        white-space: nowrap;
+      }
+
+      section {
+        padding: 0px;
+      }
+
+      section h1 {
+        margin-top: 0px;
+      }
+
+      section h2 {
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+        font-family: 'MinecraftTen', sans-serif;
+      }
+
+      section h3 {
+        white-space: nowrap;
+      }
+
+      section img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin: 0;
+        border-radius: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      section p {
+        text-align: left;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+      
+      section .btn-box {
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 20px;
+        width: 80%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+      }
+      
+      section .btn-placer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        row-gap: 10px;
+        white-space: nowrap;
+      }
+
+      section .btn-div1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+      }
+
+      section .btn-div1 h3 {
+        color: #74BBB4;
+        margin: 0;
+        padding: 2px;
+      }
+
+      .download-btn {
+        width: auto;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        outline: none;
+        justify-content: center;
+        padding: 12px 18px;
+        color: #fff;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: var(--btn-bg-color, linear-gradient(135deg, #3498db, #2980b9));
+        white-space: nowrap;
+      }
+
+      .download-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .download-btn:active {
+        transform: translateY(1px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .button-image {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border-radius: 1px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        margin-top: 30px;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        color: #fff;
+        font-size: 24px;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #e74c3c;
+      }
+
+      /* Keyframes for slide-in animation */
+      @keyframes slide-in {
+        from {
+          transform: translateY(-20px);
+          opacity: 0;
+        }
+
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .side-menu {
+        z-index: 9999;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .side-menu a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .side-menu a:hover {
+        color: #e74c3c;
+      }
+
+      .side-menu .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 36px;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        header img {
+          max-width: 50px;
+        }
+
+        header h1 {
+          font-size: 1.5rem;
+          margin-top: 0;
+          text-align: center;
+          white-space: nowrap;
+        }
+
+        header .menu-icon {
+          max-width: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="../../images/dbg/logo.webp" alt="DarkBlock Gaming Logo">
+      <h1>DarkBlock Gaming</h1>
+      <img src="../../images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
+    </header>
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+      <a href="#about-addon">About Addon</a>
+      <a href="#addon-downloads">Downloads</a>
+      <a href="#addon-know-More">Know More</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <!-- Addon section -->
+    <section id="about-addon">
+      <div class="btn-box">
+        <h2>Transparent Touch Buttons</h2>
+        <p>The Transparent Touch Buttons resource pack for Minecraft Bedrock Edition enhances your mobile gaming experience by replacing standard on-screen buttons with sleek, transparent controls. This pack minimizes visual clutter while keeping essential touch functions accessible, providing a cleaner, more immersive gameplay view. Ideal for players who want a minimalist interface without sacrificing functionality, it’s perfect for creating content and enjoying a more visually appealing Minecraft world on mobile devices.</p>
+        <img src="../../images/thumbnails/transparenttouchbuttons.webp" alt="Transparent Touch Buttons Add-on in Minecraft">
+      </div>
+    </section>
+    <!-- Addon downloads -->
+    <section id="addon-downloads">
+      <div class="btn-box">
+        <h1>Download...</h1>
+        <div class="btn-placer">
+          <div class="btn-div1">
+            <h3>v1.0.2</h3>
+            <a href="https://direct-link.net/506545/transparent-touch-buttons" style="text-decoration: none;">
+              <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+                <i class="fa fa-download"></i> Download </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Addon know more -->
+    <section id="addon-know-More">
+      <div class="btn-box">
+        <h1>Know More & Download...</h1>
+        <p style="color: red; font-weight: bold; text-align: center;">Click Curseforge for direct Download</p>
+        <div class="btn-placer">
+          <div>
+            <a href="https://www.curseforge.com/minecraft-bedrock/texture-packs/transparent-touch-buttons" style="text-decoration: none;">
+              <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #515151, #000000);">
+                <img class="button-image" src="../../images/dbg/curseforgelogo.webp"> Visit On Curseforge <i class="fa fa-arrow-up-right-from-square"></i>
+              </button>
+            </a>
+          </div>
+          <a href="https://mcpedl.com/transparent-touch-buttons/" style="text-decoration: none;">
+            <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #21511B, #00A52E);">
+              <img class="button-image" src="../../images/dbg/mcpedllogo.webp"> Visit On MCPEDL <i class="fa fa-arrow-up-right-from-square"></i>
+            </button>
+          </a>
+          <div>
+            <a href="https://modbay.org/textures/1588-transparent-touch-buttons.html" style="text-decoration: none;">
+              <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #251B2E, #6F21A6);">
+                <img class="button-image" src="../../images/dbg/modbaylogo.webp"> Visit On ModBay <i class="fa fa-arrow-up-right-from-square"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 DarkBlock Gaming.</p>
+      <div class="social-icons">
+        <a href="https://patreon.com/DarkBlockGaming" target="_blank">
+          <i class="fa-brands fa-patreon"></i>
+        </a>
+        <a href="https://discord.gg/73QxQEdwc5" target="_blank">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+        <a href="https://x.com/darkblockgaming" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://instagram.com/darkblockgaming" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com/@darkblockgaming" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="mailto:contact.darkblock.gaming@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
