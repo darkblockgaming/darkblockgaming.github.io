@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore all the Minecraft Bedrock Edition add-ons and packs created by DarkBlock Gaming. Discover unique content to enhance your game.">
+    <title>DarkBlock Gaming | Minecraft Bedrock Edition Add-ons and Packs</title>
+    <meta name="keywords" content="Minecraft Bedrock, Add-ons, Packs, Minecraft Content, DarkBlock Gaming, Minecraft Add-ons">
+    <meta name="author" content="DarkBlock Gaming">
+    	
+    <meta property="og:title" content="DarkBlock Gaming - Minecraft Bedrock Add-ons and Packs">
+    <meta property="og:description" content="Browse and download all Minecraft Bedrock Edition add-ons and packs by DarkBlock Gaming.">
+    <meta property="og:image" content="https://darkblockgaming.github.io/images/dbg/logo.webp">
+    <meta property="og:url" content="https://darkblockgaming.github.io/addons/">
+    <meta property="og:type" content="website">
+    	
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DarkBlock Gaming - Minecraft Bedrock Add-ons and Packs">
+    <meta name="twitter:description" content="Discover Minecraft Bedrock Edition add-ons and packs made by DarkBlock Gaming.">
+    <meta name="twitter:image" content="https://darkblockgaming.github.io/images/dbg/logo.webp">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="https://darkblockgaming.github.io/images/dbg/logo.webp" type="image/webp">
+    <style>
+      @font-face {
+        font-family: 'MinecraftTen';
+        src: url('https://darkblockgaming.github.io/fonts/minecraft-ten.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        text-align: center;
+        overflow-x: hidden;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+
+      header img {
+        max-width: 80px;
+        height: auto;
+      }
+
+      header .menu-icon {
+        max-width: 80px;
+        height: auto;
+        cursor: pointer;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+        text-align: center;
+        flex-grow: 1;
+        white-space: nowrap;
+      }
+
+      section h2 {
+        font-family: 'MinecraftTen', sans-serif;
+      }
+
+      section#my-addons {
+        padding: 0px;
+      }
+
+      section#my-addons h1 {
+        margin-top: 0px;
+      }
+
+      section#my-addons h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+        font-family: sans-serif;
+      }
+
+      section#my-addons>.addon-box h2 {
+        margin: 0;
+      }
+
+      section#my-addons h3 {
+        white-space: nowrap;
+      }
+
+      section#my-addons img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin: 20px 0;
+        border-radius: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      section#my-addons p {
+        margin-bottom: 15px;
+        text-align: left;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        max-width: 100%;
+        margin: 0 auto 15px auto;
+      }
+
+      section#my-addons .addon-box {
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 20px;
+        width: 80%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+      }
+
+      section#my-addons .btn-placer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        row-gap: 10px;
+        white-space: nowrap;
+      }
+
+      .download-btn {
+        width: auto;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        outline: none;
+        justify-content: center;
+        padding: 12px 18px;
+        color: #fff;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: var(--btn-bg-color, linear-gradient(135deg, #3498db, #2980b9));
+        white-space: nowrap;
+      }
+
+      .download-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .download-btn:active {
+        transform: translateY(1px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        margin-top: 30px;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        color: #fff;
+        font-size: 24px;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #e74c3c;
+      }
+
+      @keyframes slide-in {
+        from {
+          transform: translateY(-20px);
+          opacity: 0;
+        }
+
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .side-menu {
+        z-index: 9999;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .side-menu a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .side-menu a:hover {
+        color: #e74c3c;
+      }
+
+      .side-menu .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 36px;
+        cursor: pointer;
+      }
+
+      .popup {
+        display: none;
+        z-index: 9999;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        max-width: 500px;
+        background-color: #0ff;
+        padding: 1.5em;
+        box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.3);
+        border-radius: 0.625em;
+        text-align: left;
+        font-family: Arial, sans-serif;
+      }
+
+      .popup h4 {
+        margin-top: 0;
+        font-size: 1.25em;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+      }
+
+      .popup p {
+        margin: 0.625em 0;
+        font-size: 1em;
+        color: #555;
+      }
+
+      .popup p strong {
+        color: #333;
+      }
+
+      .popup-close {
+        cursor: pointer;
+        background-color: #e74c3c;
+        padding: 0.375em 0.75em;
+        border-radius: 0.375em;
+        color: #fff;
+        text-decoration: none;
+        position: absolute;
+        top: 0.75em;
+        right: 0.75em;
+      }
+
+      .popup-close:hover {
+        background-color: #c0392b;
+      }
+
+      @media (max-width: 768px) {
+        header img {
+          max-width: 50px;
+        }
+
+        header h1 {
+          font-size: 1.5rem;
+          margin-top: 0;
+          text-align: center;
+          white-space: nowrap;
+        }
+
+        header .menu-icon {
+          max-width: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="https://darkblockgaming.github.io/images/dbg/logo.webp" alt="DarkBlock Gaming Logo">
+      <h1>DarkBlock Gaming</h1>
+      <img src="https://darkblockgaming.github.io/images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
+    </header>
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+      <a href="#about-addon">Addon Development Guide</a>
+      <a href="#my-addons">My Addons</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <!-- Info Popup -->
+    <div class="popup" id="popup">
+      <a href="javascript:void(0)" class="popup-close" onclick="closePopup()">×</a>
+      <h4 id="popup-title"></h4>
+      <p>
+        <strong>MC Version:</strong>
+        <span id="popup-supported-version"></span>
+      </p>
+      <p>
+        <strong>Pack Type:</strong>
+        <span id="popup-addon-type"></span>
+      </p>
+      <p>
+        <strong>Exp. Features:</strong>
+        <span id="popup-exp-features"></span>
+      </p>
+      
+      <p>
+        <strong>Latest Versions:</strong>
+        <span id="popup-latest-versions"></span>
+      </p>
+    </div>
+    <!-- Addons section -->
+    <section id="my-addons">
+      <h2 style="font-family: 'MinecraftTen', sans-serif;">My Add-ons</h2>
+      <div class="addon-box">
+        <h2>ReplayCraft</h2>
+        <p>ReplayCraft is a unique add-on that brings real replay capabilities to the game, made primarily for recording building sessions and creating stunning cinematics of your world. Capture every block placement, epic moment, and creative scene with ease, bringing your builds to life with smooth replays and full cinematic control to record any activity in-game. Whether you're showcasing complex structures, capturing group projects, or creating cinematic sequences of adventures, ReplayCraft adds a new dimension to Minecraft storytelling—perfect for builders, filmmakers, and content creators alike.</p>
+        <a href="https://darkblockgaming.github.io/addons/replaycraft/" style="text-decoration: none;">
+        <img src="https://darkblockgaming.github.io/images/thumbnails/replaycraft.webp" alt="ReplayCraft">
+        </a>
+        <div class="btn-placer">
+          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('ReplayCraft', '1.21+', 'BP + RP', 'Yes (Beta APIs)', '1.7.0 & 2.0.6-beta')">
+            <i class="fa fa-info-circle"></i> Info </button>
+          <a href="https://darkblockgaming.github.io/addons/replaycraft/" style="text-decoration: none;">
+            <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+              <i class="fa fa-download"></i> Download </button>
+          </a>
+        </div>
+      </div>
+      <div class="addon-box">
+        <h2>More Camera Perspectives</h2>
+        <p>More Camera Perspectives is a powerful add-on that transforms how players enjoy their world by introducing a variety of customizable camera angles and perspectives beyond the standard views. Each camera offers extensive customization options, and you can even create your own unique angles, giving you complete control over how you capture and experience Minecraft. Perfect for recording creative cinematics, this add-on enhances gameplay and allows for immersive exploration. Whether you're looking to capture stunning visuals or simply enjoy your adventures from fresh perspectives, More Camera Perspectives is ideal for everyone and must try it.</p>
+        <a href="https://darkblockgaming.github.io/addons/more-camera-perspectives/" style="text-decoration: none;">
+        <img src="https://darkblockgaming.github.io/images/thumbnails/morecampers.webp" alt="More Camera Perspectives">
+ </a>
+       <div class="btn-placer">
+          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('More Camera Perspectives', '1.21+', 'Behaviour Pack', 'None', '3.1.1')">
+            <i class="fa fa-info-circle"></i> Info </button>
+          <a href="https://darkblockgaming.github.io/addons/more-camera-perspectives/" style="text-decoration: none;">
+            <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+              <i class="fa fa-download"></i> Download </button>
+          </a>
+        </div>
+      </div>
+      <div class="addon-box">
+        <h2>Player Spectator</h2>
+        <p>With the Player Spectator add-on, you can now spectate other players in real-time, just like in other popular games! This add-on lets you follow any player on your server, observing their actions and movements without interfering in their gameplay. Unlike Minecraft’s traditional spectator mode, which allows you to explore the world independently, this add-on is focused on spectating specific players directly. Perfect for server admins, content creators, or friends who want to watch each other’s gameplay up close, the Player Spectator add-on brings a new level of engagement and control to multiplayer Minecraft!</p>
+        <a href="https://darkblockgaming.github.io/addons/player-spectator/" style="text-decoration: none;">
+        <img src="https://darkblockgaming.github.io/images/thumbnails/playerspectator.webp" alt="Player Spectator">
+       </a>
+ <div class="btn-placer">
+          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('Player Spectator', '1.21+', 'Behaviour Pack', 'None', '1.0.0')">
+            <i class="fa fa-info-circle"></i> Info </button>
+          <a href="https://darkblockgaming.github.io/addons/player-spectator/" style="text-decoration: none;">
+            <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+              <i class="fa fa-download"></i> Download </button>
+          </a>
+        </div>
+      </div>
+      <div class="addon-box">
+        <h2>SurveilCraft: CCTV</h2>
+        <p>SurveilCraft is a unique CCTV add-on for Minecraft Bedrock Edition, designed to bring advanced surveillance features right into your game. With SurveilCraft, players can place their own CCTV cameras, setting them up at any distance and still accessing the live feed. Each player has individual control over their own cameras, ensuring privacy, while the cameras remain invisible to players for enhanced stealth. Perfect for creating hidden surveillance systems, managing large builds, or adding a new level of security and immersion to multiplayer gameplay.</p>
+        <a href="https://darkblockgaming.github.io/addons/surveilcraft/" style="text-decoration: none;">
+        <img src="https://darkblockgaming.github.io/images/thumbnails/surveilcraft.webp" alt="SurveilCraft">
+       </a>
+ <div class="btn-placer">
+          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('SurveilCraft', '1.21+', 'Behaviour Pack', 'None', '1.2.0')">
+            <i class="fa fa-info-circle"></i> Info </button>
+          <a href="https://darkblockgaming.github.io/addons/surveilcraft/" style="text-decoration: none;">
+            <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+              <i class="fa fa-download"></i> Download </button>
+          </a>
+        </div>
+      </div>
+      <div class="addon-box">
+        <h2>Custom 3d Totem</h2>
+        <p>The 3D Totem Resource Pack personalizes your Minecraft world by turning the totem of undying into a 3D version of your own player skin. Every time you hold a totem, you’ll see a mini 3D model of yourself, making survival moments feel more immersive. This pack offers a fun, unique way to bring more character into your gameplay.</p>
+        <a href="https://darkblockgaming.github.io/addons/custom-3d-totem/" style="text-decoration: none;">
+        <img src="https://darkblockgaming.github.io/images/thumbnails/custom3dtotem.webp" alt="Custom 3d Totem">
+   </a>
+     <div class="btn-placer">
+          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('Custom 3d Totem', '1.21+', 'Resource Pack', 'None', '1.0.0')">
+            <i class="fa fa-info-circle"></i> Info </button>
+          <a href="https://darkblockgaming.github.io/addons/custom-3d-totem/" style="text-decoration: none;">
+            <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+              <i class="fa fa-download"></i> Download </button>
+          </a>
+        </div>
+      </div>
+      <div class="addon-box">
+        <h2>Music Controller</h2>
+        <p>The Music Controller gives players full control over in-game music, adding an immersive and customizable audio experience. With this add-on, you can easily control music tracks directly from an interactive menu. Perfect for setting the mood in your world, whether you're building, exploring, or simply relaxing.</p>
+        <a href="https://darkblockgaming.github.io/addons/music-controller/" style="text-decoration: none;">
+        <img src="https://darkblockgaming.github.io/images/thumbnails/musiccontroller.webp" alt="Music Controller">
+      </a>
+  <div class="btn-placer">
+          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('Music Controller', '1.21+', 'Behaviour Pack', 'None', '1.0.0')">
+            <i class="fa fa-info-circle"></i> Info </button>
+          <a href="https://darkblockgaming.github.io/addons/music-controller/" style="text-decoration: none;">
+            <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+              <i class="fa fa-download"></i> Download </button>
+          </a>
+        </div>
+      </div>
+      <div class="addon-box">
+        <h2>Vanilla Deferred Lighting</h2>
+        <p>This is a deferred shader for Minecraft Bedrock Edition, deferred shaders has really good lighting and realistic water effects. This shader basically can be used to enable vanilla deferred shaders without any modifications to the default shader values. This pack is great if you wanna experience vannila deferred shader, must try if you like deferred shaders.</p>
+        <a href="https://darkblockgaming.github.io/addons/vanilla-deferred-lighting/" style="text-decoration: none;">
+        <img src="https://darkblockgaming.github.io/images/thumbnails/vanilladeferredlighting.webp" alt="Vanilla Deferred Lighting">
+   </a>
+     <div class="btn-placer">
+          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('Vanilla Deferred Lighting', '1.21+', 'Resource Pack (Shader)', 'None', '1.0.2')">
+            <i class="fa fa-info-circle"></i> Info </button>
+          <a href="https://darkblockgaming.github.io/addons/vanilla-deferred-lighting/" style="text-decoration: none;">
+            <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+              <i class="fa fa-download"></i> Download </button>
+          </a>
+        </div>
+      </div>
+      <div class="addon-box">
+        <h2>Transparent Touch Buttons</h2>
+        <p>The Transparent Touch Buttons resource pack for Minecraft Bedrock Edition enhances your mobile gaming experience by replacing standard on-screen buttons with sleek, transparent controls. This pack minimizes visual clutter while keeping essential touch functions accessible, providing a cleaner, more immersive gameplay view. Ideal for players who want a minimalist interface without sacrificing functionality, it’s perfect for creating content and enjoying a more visually appealing Minecraft world on mobile devices.</p>
+        <a href="https://darkblockgaming.github.io/addons/transparent-touch-buttons/" style="text-decoration: none;">
+        <img src="https://darkblockgaming.github.io/images/thumbnails/transparenttouchbuttons.webp" alt="Transparent Touch Buttons">
+     </a>
+   <div class="btn-placer">
+          <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #3498db, #2980b9);" onclick="openPopup('Transparent Touch Buttons', '1.21+', 'Resource Pack', 'None', '1.0.2')">
+            <i class="fa fa-info-circle"></i> Info </button>
+          <a href="https://darkblockgaming.github.io/addons/transparent-touch-buttons/" style="text-decoration: none;">
+            <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+              <i class="fa fa-download"></i> Download </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 DarkBlock Gaming.</p>
+      <div class="social-icons">
+        <a href="https://patreon.com/DarkBlockGaming" target="_blank">
+          <i class="fa-brands fa-patreon"></i>
+        </a>
+        <a href="https://discord.gg/73QxQEdwc5" target="_blank">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+        <a href="https://x.com/darkblockgaming" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://instagram.com/darkblockgaming" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com/@darkblockgaming" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="mailto:contact.darkblock.gaming@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+    <script>
+      function openMenu() {
+        document.getElementById("sideMenu").style.width = "250px";
+      }
+
+      function closeMenu() {
+        document.getElementById("sideMenu").style.width = "0";
+      }
+
+      function openPopup(addonName, addonSuppVer, addonType, addonExpFeatures, addonLatestVersions) {
+        document.getElementById('popup-title').textContent = addonName;
+        document.getElementById('popup-supported-version').textContent = addonSuppVer;
+        document.getElementById('popup-addon-type').textContent = addonType;
+        document.getElementById('popup-exp-features').textContent = addonExpFeatures;
+        document.getElementById('popup-latest-versions').textContent = addonLatestVersions;
+        
+        document.getElementById('popup').style.display = 'block';
+      }
+
+      function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
