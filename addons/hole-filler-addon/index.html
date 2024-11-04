@@ -3,35 +3,37 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover and download Minecraft Bedrock Edition Addons and Mods by DarkBlock Gaming. Enhance your gameplay with our unique creations and tutorials.">
-    <title>DarkBlock Gaming | Minecraft Bedrock Edition Addons, Mods, and Tutorials</title>
-    <meta name="keywords" content="Minecraft Bedrock, Addons, Mods, Minecraft Mods, DarkBlock Gaming, Minecraft Addons, Tutorials, Minecraft Documentation">
+    <meta name="description" content="Fix blast craters instantly with the Hole Filler Add-on for Minecraft Bedrock Edition. Just throw the item, and fill holes caused by TNT and creeper explosions! Customize animations and enjoy a smoother landscape.">
+    <meta name="keywords" content="Minecraft, Bedrock Edition, Hole Filler, Add-on, Minecraft Add-on, TNT, Creeper Explosion Fix, DarkBlock Gaming">
     <meta name="author" content="DarkBlock Gaming">
-    	
-    <meta property="og:title" content="DarkBlock Gaming">
-    <meta property="og:description" content="Minecraft Bedrock Addons, Documentations & Much More".">
-    <meta property="og:image" content="images/dbg/logo.webp">
-    <meta property="og:url" content="https://darkblockgaming.github.io/">
+    <title>Hole Filler Add-on for Minecraft Bedrock Edition</title>
+    
+    <meta property="og:title" content="Hole Filler Add-on - Minecraft Bedrock Edition">
+    <meta property="og:description" content="Easily fill blast craters with the Hole Filler Add-on! Just throw the item to repair holes instantly. Fully customizable animations included.">
+    <meta property="og:image" content="https://darkblockgaming.github.io/images/thumbnails/holefilleraddon.webp">
+    <meta property="og:url" content="https://darkblockgaming.github.io/addons/hole-filler-addon/">
     <meta property="og:type" content="website">
-
+    	
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DarkBlock Gaming">
-    <meta name="twitter:description" content="Minecraft Bedrock Addons, Documentations & Much More".">
-    <meta name="twitter:image" content="images/dbg/logo.webp">
+    <meta name="twitter:title" content="Hole Filler Add-on - Minecraft Bedrock Edition">
+    <meta name="twitter:description" content="Repair blast damage in seconds with the Hole Filler Add-on! A new item to instantly fill TNT and creeper craters.">
+    <meta name="twitter:image" content="https://darkblockgaming.github.io/images/thumbnails/holefilleraddon.webp">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="icon" href="images/dbg/logo.webp" type="image/webp">
+    <link rel="icon" href="../../images/dbg/logo.webp" type="image/webp">
+    <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
+    <script>
+      linkvertise(506545, {
+        whitelist: ["mediafire.com"],
+        blacklist: []
+      });
+    </script>
     <style>
-
       @font-face {
         font-family: 'MinecraftTen';
-        src: url('fonts/minecraft-ten.ttf') format('truetype');
+        src: url('../../fonts/minecraft-ten.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
-      }
-
-      html {
-      	
       }
 
       body {
@@ -52,6 +54,7 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: nowrap;
+        margin-bottom: 30px;
       }
 
       header img {
@@ -74,11 +77,118 @@
       }
 
       section {
-        padding-top: 50px;
+        padding: 0px;
+      }
+
+      section h1 {
+        margin-top: 0px;
       }
 
       section h2 {
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
         font-family: 'MinecraftTen', sans-serif;
+      }
+
+      section h3 {
+        white-space: nowrap;
+      }
+
+      section img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin: 0;
+        border-radius: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      section p {
+        text-align: left;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+
+      section .btn-box {
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 20px;
+        width: 80%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+      }
+
+      section .btn-placer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        row-gap: 10px;
+        white-space: nowrap;
+      }
+
+      section .btn-div1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+      }
+
+      section .btn-div1 h3 {
+        color: #74BBB4;
+        margin: 0;
+        padding: 2px;
+      }
+
+      .download-btn {
+        width: auto;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        outline: none;
+        justify-content: center;
+        padding: 12px 18px;
+        color: #fff;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: var(--btn-bg-color, linear-gradient(135deg, #3498db, #2980b9));
+        white-space: nowrap;
+      }
+
+      .download-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .download-btn:active {
+        transform: translateY(1px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .button-image {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border-radius: 1px;
       }
 
       footer {
@@ -170,162 +280,79 @@
           max-width: 50px;
         }
       }
-
-      section#my-addons h1 {
-        margin-top: 0px;
-      }
-
-      section#my-addons h2 {
-        font-size: 2rem;
-        margin: 0;
-        text-align: center;
-        font-family: sans-serif;
-      }
-
-      section#my-addons h3 {
-        white-space: nowrap;
-      }
-
-      section#my-addons .gallery-box {
-        background-color: #fff;
-        margin: 10px auto;
-        padding: 20px;
-        width: 80%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-      }
-
-      section#my-addons .gallery-container {
-        display: flex;
-        overflow-x: auto;
-        white-space: nowrap;
-        gap: 10px;
-        scroll-snap-type: x mandatory;
-      }
-
-      section#my-addons .gallery-item {
-        scroll-snap-align: center;
-        flex: 0 0 auto;
-        background-color: #f0f0f0;
-        margin: 10px auto;
-        padding: 20px;
-        width: 80%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-      }
-
-      section#my-addons .gallery-item img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        margin-bottom: 5px;
-        margin-top: 5px;
-        border-radius: 5px;
-        display: block;
-      }
-
-      section#my-addons .gallery-item p {
-        white-space: normal;
-        overflow-wrap: break-word;
-        margin: 0;
-        text-align: left;
-        font-size: 0.9rem;
-        line-height: 1.5;
-        max-width: 100%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-      }
-
-      section#my-addons .gallery-item h2 {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin: 0;
-      }
     </style>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <img src="images/dbg/logo.webp" alt="DarkBlock Gaming Logo">
+      <img src="../../images/dbg/logo.webp" alt="DarkBlock Gaming Logo">
       <h1>DarkBlock Gaming</h1>
-      <img src="images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
+      <img src="../../images/dbg/sideMenuIcon.webp" alt="Menu Icon" class="menu-icon" onclick="openMenu()">
     </header>
     <!-- Side Menu -->
     <div id="sideMenu" class="side-menu">
       <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
-      <a href="#addons-doc">Addon Dev Guide</a>
-      <a href="#my-addons">My Addons</a>
-      <a href="#about">About</a>
-      <a href="mailto:contact.darkblock.gaming@gmail.com">Contact</a>
+      <a href="#about-addon">About Addon</a>
+      <a href="#addon-downloads">Downloads</a>
+      <a href="#addon-know-More">Know More</a>
+      <a href="#contact">Contact</a>
     </div>
-    <!-- Addons doc -->
-    <section id="addons-doc">
-      <h2>Add-on Development Guide</h2>
-      <p>Coming very soon.....</p>
+    <!-- Addon section -->
+    <section id="about-addon">
+      <div class="btn-box">
+        <h2>Hole Filler Add-on</h2>
+        <p>The Hole Filler Add-on introduces a new item to Minecraft Bedrock Edition designed to instantly fill in holes created by TNT blasts, creeper explosions, and other destruction. Simply throw the Hole Filler item into any crater, and it will quickly fill the space with blocks.</p>
+        <p style="margin-top: 20px;">This add-on offers extensive customization options, including multiple animations for the filling process, allowing you to choose your favorite style.</p>
+        <p style="margin-top: 20px;">To obtain the Hole Filler item, type ?dbgHoleFiller in the chat.</p>
+        <p style="margin-top: 20px;">Note: This is the first beta version, and the hole-filling logic may contain some bugs. Please report any issues you encounter, and if this pack receives your support, I’ll work to improve the logic further!</p>
+        <p style="margin-top: 5px;">The idea for this add-on is inspired by a famous java mod called Hole Filler mod!</p>
+        <img src="https://darkblockgaming.github.io/images/thumbnails/holefilleraddon.webp" alt="Hole Filler Addon">
+      </div>
     </section>
-    <!-- Add-ons Gallery -->
-    <section id="my-addons">
-      <div class="gallery-box">
-        <div>
-          <h2 style="font-family: 'MinecraftTen', sans-serif; margin-top:0" ;>My Add-ons</h2>
+    <!-- Addon downloads -->
+    <section id="addon-downloads">
+      <div class="btn-box">
+        <h1>Download...</h1>
+        <div class="btn-placer">
+          <div class="btn-div1">
+            <h3>v1.0.0-beta</h3>
+            <a href="https://direct-link.net/506545/hole-filler-v1-beta" style="text-decoration: none;">
+              <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #ff6b6b, #e74c3c);">
+                <i class="fa fa-download"></i> Download </button>
+            </a>
+            <h3>for 1.21.41+</h3>
+          </div>
         </div>
-        <div class="gallery-container">
-          <div class="gallery-item" data-link="https://darkblockgaming.github.io/addons/replaycraft/">
-            <h2>ReplayCraft</h2>
-            <img src="images/thumbnails/replaycraft.webp" alt="ReplayCraft">
-            <p>ReplayCraft is a unique add-on that brings real replay capabilities to the game, made primarily for recording building sessions and creating stunning cinematics of your world. Capture every block placement, epic moment, and creative scene with ease, bringing your builds to life with smooth replays and full cinematic control to record any activity in-game. Whether you're showcasing complex structures, capturing group projects, or creating cinematic sequences of adventures, ReplayCraft adds a new dimension to Minecraft storytelling—perfect for builders, filmmakers, and content creators alike.</p>
+        <p style="color: red; font-weight: bold; text-align: center;">Download from here to support me :)</p>
+      </div>
+    </section>
+    <!-- Addon know more -->
+    <section id="addon-know-More">
+      <div class="btn-box">
+        <h1>Know More & Download...</h1>
+        <p style="color: red; font-weight: bold; text-align: center;">Click Curseforge for direct Download</p>
+        <div class="btn-placer">
+          <div>
+            <a href="https://www.curseforge.com/" style="text-decoration: none;">
+              <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #515151, #000000);">
+                <img class="button-image" src="../../images/dbg/curseforgelogo.webp"> Visit On Curseforge <i class="fa fa-arrow-up-right-from-square"></i>
+              </button>
+            </a>
           </div>
-          <div class="gallery-item" data-link="https://darkblockgaming.github.io/addons/more-camera-perspectives/">
-            <h2>More Camera Perspectives</h2>
-            <img src="images/thumbnails/morecampers.webp" alt="More Camera Perspectives">
-            <p>More Camera Perspectives is a powerful add-on that transforms how players enjoy their world by introducing a variety of customizable camera angles and perspectives beyond the standard views. Each camera offers extensive customization options, and you can even create your own unique angles, giving you complete control over how you capture and experience Minecraft. Perfect for recording creative cinematics, this add-on enhances gameplay and allows for immersive exploration. Whether you're looking to capture stunning visuals or simply enjoy your adventures from fresh perspectives, More Camera Perspectives is ideal for everyone and must try it.</p>
-          </div>
-          <div class="gallery-item" data-link="https://darkblockgaming.github.io/addons/hole-filler-addon/">
-            <h2>Hole Filler Addon</h2>
-            <img src="images/thumbnails/holefilleraddon.webp" alt="Hole Filler Addon">
-            <p>The Hole Filler Add-on introduces a new item to Minecraft Bedrock Edition designed to instantly fill in holes created by TNT blasts, creeper explosions, and other destruction. Simply throw the Hole Filler item into any crater, and it will quickly fill the space with blocks.</p>
-          </div>
-          <div class="gallery-item" data-link="https://darkblockgaming.github.io/addons/player-spectator/">
-            <h2>Player Spectator</h2>
-            <img src="images/thumbnails/playerspectator.webp" alt="Player Spectator">
-            <p>With the Player Spectator add-on, you can now spectate other players in real-time, just like in other popular games! This add-on lets you follow any player on your server, observing their actions and movements without interfering in their gameplay. Unlike Minecraft’s traditional spectator mode, which allows you to explore the world independently, this add-on is focused on spectating specific players directly. Perfect for server admins, content creators, or friends who want to watch each other’s gameplay up close, the Player Spectator add-on brings a new level of engagement and control to multiplayer Minecraft!</p>
-          </div>
-          <div class="gallery-item" data-link="https://darkblockgaming.github.io/addons/surveilcraft/">
-            <h2>SurveilCraft: CCTV</h2>
-            <img src="images/thumbnails/surveilcraft.webp" alt="SurveilCraft CCTV">
-            <p>SurveilCraft is a unique CCTV add-on for Minecraft Bedrock Edition, designed to bring advanced surveillance features right into your game. With SurveilCraft, players can place their own CCTV cameras, setting them up at any distance and still accessing the live feed. Each player has individual control over their own cameras, ensuring privacy, while the cameras remain invisible to players for enhanced stealth. Perfect for creating hidden surveillance systems, managing large builds, or adding a new level of security and immersion to multiplayer gameplay.</p>
-          </div>
-          <div class="gallery-item" data-link="https://darkblockgaming.github.io/addons/custom-3d-totem/">
-            <h2>Custom 3d Totem</h2>
-            <img src="images/thumbnails/custom3dtotem.webp" alt="Custom 3d Totem">
-            <p>The 3D Totem Resource Pack personalizes your Minecraft world by turning the totem of undying into a 3D version of your own player skin. Every time you hold a totem, you’ll see a mini 3D model of yourself, making survival moments feel more immersive. This pack offers a fun, unique way to bring more character into your gameplay.</p>
-          </div>
-          <div class="gallery-item" data-link="https://darkblockgaming.github.io/addons/music-controller/">
-            <h2>Music Controller</h2>
-            <img src="images/thumbnails/musiccontroller.webp" alt="Music Controller">
-            <p>The Music Controller gives players full control over in-game music, adding an immersive and customizable audio experience. With this add-on, you can easily control music tracks directly from an interactive menu. Perfect for setting the mood in your world, whether you're building, exploring, or simply relaxing.</p>
-          </div>
-          <div class="gallery-item" data-link="https://darkblockgaming.github.io/addons/vanilla-deferred-lighting/">
-            <h2>Vanilla Deferred Lighting</h2>
-            <img src="images/thumbnails/vanilladeferredlighting.webp" alt="Vanilla Deferred Lighting">
-            <p>This is a deferred shader for Minecraft Bedrock Edition, deferred shaders has really good lighting and realistic water effects. This shader basically can be used to enable vanilla deferred shaders without any modifications to the default shader values. This pack is great if you wanna experience vannila deferred shader, must try if you like deferred shaders.</p>
-          </div>
-          <div class="gallery-item" data-link="https://darkblockgaming.github.io/addons/transparent-touch-buttons/">
-            <h2>Transparent Touch Buttons</h2>
-            <img src="images/thumbnails/transparenttouchbuttons.webp" alt="Transparent Touch Buttons">
-            <p>The Transparent Touch Buttons resource pack for Minecraft Bedrock Edition enhances your mobile gaming experience by replacing standard on-screen buttons with sleek, transparent controls. This pack minimizes visual clutter while keeping essential touch functions accessible, providing a cleaner, more immersive gameplay view. Ideal for players who want a minimalist interface without sacrificing functionality, it’s perfect for creating content and enjoying a more visually appealing Minecraft world on mobile devices.</p>
+          <a href="https://mcpedl.com/" style="text-decoration: none;">
+            <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #21511B, #00A52E);">
+              <img class="button-image" src="../../images/dbg/mcpedllogo.webp"> Visit On MCPEDL <i class="fa fa-arrow-up-right-from-square"></i>
+            </button>
+          </a>
+          <div>
+            <a href="https://modbay.org/" style="text-decoration: none;">
+              <button class="download-btn" style="--btn-bg-color: linear-gradient(135deg, #251B2E, #6F21A6);">
+                <img class="button-image" src="../../images/dbg/modbaylogo.webp"> Visit On ModBay <i class="fa fa-arrow-up-right-from-square"></i>
+              </button>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I create addons for Minecraft Bedrock Edition. Check out my work and feel free to reach out if you'd like to collaborate.</p>
     </section>
     <!-- Footer -->
     <footer>
@@ -359,14 +386,6 @@
       function closeMenu() {
         document.getElementById("sideMenu").style.width = "0";
       }
-      document.querySelectorAll('.gallery-item').forEach(item => {
-        item.addEventListener('click', () => {
-          const link = item.getAttribute('data-link');
-          if (link) {
-            window.open(link, '_blank');
-          }
-        });
-      });
     </script>
   </body>
 </html>
