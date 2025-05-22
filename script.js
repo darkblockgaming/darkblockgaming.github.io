@@ -13,7 +13,7 @@ const btn = document.getElementById('toggle-md');
 const container = document.getElementById('markdown-container');
 
 if (btn && container) {
-  fetch(mdName)
+  fetch(markDownPath)
     .then(res => res.text())
     .then(md => {
       container.innerHTML = marked.parse(md);
