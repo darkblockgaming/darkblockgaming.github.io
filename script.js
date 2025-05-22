@@ -9,21 +9,19 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
 const btn = document.getElementById('toggle-md');
 const container = document.getElementById('markdown-container');
 
+if (btn && container) {
+  fetch(mdName)
+    .then(res => res.text())
+    .then(md => {
+      container.innerHTML = marked.parse(md);
+    });
 
-
-fetch("../../markdowns/ReplayCraft.md")
-  .then(res => res.text())
-  .then(md => {
-    container.innerHTML = marked.parse(md);
+  btn.addEventListener('click', () => {
+    const isCollapsed = container.classList.toggle('expanded');
+    container.classList.toggle('collapsed', !isCollapsed);
+    btn.textContent = isCollapsed ? 'Show Less' : 'Show More';
   });
-
-btn.addEventListener('click', () => {
-  const isCollapsed = container.classList.toggle('expanded');
-  container.classList.toggle('collapsed', !isCollapsed);
-  btn.textContent = isCollapsed ? 'Show Less' : 'Show More';
-});
+}
