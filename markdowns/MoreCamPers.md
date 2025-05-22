@@ -1,7 +1,7 @@
 
 ---
 
-![More Camera Perspectives Text Logo](https://darkblockgaming.github.io/assets/morecamerapers/title-logo.png)
+![More Camera Perspectives Text Logo](https://darkblockgaming.github.io/assets/morecampers/title-logo.png)
 
 ---
 
@@ -71,19 +71,19 @@ All your customization data is saved permanently, so your settings will never be
 
 > The stick keeps its normal function (attacking, crafting, etc.)—only adds camera control!
 
-![Stick Use](https://darkblockgaming.github.io/assets/morecamerapers/stick-use.gif)
+![Stick Use](https://darkblockgaming.github.io/assets/morecampers/screenshots/stick-use.gif)
 
 You’ll then see the camera menu, Choose from a list of preset or dynamic camera perspectives:
 
-![Main Menu](https://darkblockgaming.github.io/assets/morecamerapers/main-menu.gif)
+![Main Menu](https://darkblockgaming.github.io/assets/morecampers/screenshots/main-menu.gif)
 
 You can tweak **almost every setting**: of almost any added camera perspectives, which makes it much more fun and useful!
 
 #### For Example:
- ![Menu 1](https://darkblockgaming.github.io/assets/morecamerapers/randSet1.jpg)
- ![Menu 2](https://darkblockgaming.github.io/assets/morecamerapers/randSet2.jpg)
- ![Menu 3](https://darkblockgaming.github.io/assets/morecamerapers/randSet3.jpg)
- ![Menu 4](https://darkblockgaming.github.io/assets/morecamerapers/randSet4.jpg)
+ ![Menu 1](https://darkblockgaming.github.io/assets/morecampers/screenshots/randSet1.jpg)
+ ![Menu 2](https://darkblockgaming.github.io/assets/morecampers/screenshots/randSet2.jpg)
+ ![Menu 3](https://darkblockgaming.github.io/assets/morecampers/screenshots/randSet3.jpg)
+ ![Menu 4](https://darkblockgaming.github.io/assets/morecampers/screenshots/screenshots/randSet4.jpg)
 
 ***
 
@@ -91,46 +91,46 @@ You can tweak **almost every setting**: of almost any added camera perspectives,
 > **Note**: Listed below are just some perspectives, there many more this pack adds....
 
 * ###  Dynamic Third Person (Back) - Total 11+ perspectives....
-  ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/dtppb3.gif)  
-  ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/dtpp4.gif)
+  ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/dtppb3.gif)  
+  ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/dtpp4.gif)
 
 * ###  Custom Dynamic TPP – Create your own dynamic third-person setup
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/cusdtpp1.jpg)
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/cusdtpp2.jpg)
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/cusdtpp1.jpg)
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/cusdtpp2.jpg)
 
 * ### Better TPP Front - A customisable third person front perspective!
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/bfpp.gif)
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/bfpp.gif)
 
 * ### Orbital Cam - The camera moves in a circular orbit around the player while facing the player, Is customisable!
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/orbital.gif)
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/orbital.gif)
 
 * ### Static Follow Cam – Fix the camera to a point and let it follow the player  
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/followcam.gif)
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/followcam.gif)
     
 * ### Place Camera Here – Instantly place the camera at your look direction or the block you are looking at while the camera will face you (incredibly useful for thumbnails) 
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/placeCam1.jpeg) 
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/placeCam2.jpg)
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/placeCam1.jpeg) 
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/placeCam2.jpg)
     
 * ### Top-down / Maze View – Great for navigating puzzles or mazes  
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/mazeview.gif)
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/mazeview.gif)
     
 * ### X-Ray Underground View – View caves and mineshafts easily (disabled by default, only owener/admin can enable if used in servers or SMPs)
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/xRayCam.jpeg)
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/xRayCam.jpeg)
     
 * ### Watchtower View – High elevation to explore your surroundings  
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/watchTower.gif)
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/watchTower.gif)
 
 * ### Isometric Cameras (4 Types) - Classic angled perspectives for a game-like feel  
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/isocam.gif)  
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/isocam.gif)  
 
 * ### Dimetric Cameras (4 Types) - More cinematic angled views  
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/dicam.gif)
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/dicam.gif)
 
 * ### Trimetric Cameras (4 Types) - Geometric top-down views  
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/tricam.gif)  
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/tricam.gif)  
 
 * ### 2D Side View (4 Types) - Perfect for platformer-style gameplay  
-    ![IMG](https://darkblockgaming.github.io/assets/morecamerapers/sideview.gif)  
+    ![IMG](https://darkblockgaming.github.io/assets/morecampers/screenshots/sideview.gif)  
 
 ***
 
