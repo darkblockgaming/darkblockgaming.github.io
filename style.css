@@ -264,7 +264,7 @@ ul li::before {
     white-space: nowrap;
 }
 
-.button {
+a.button {
     width: auto;
     z-index: 1;
     display: inline-flex;
@@ -273,7 +273,6 @@ ul li::before {
     outline: none;
     justify-content: center;
     padding: 12px 18px;
-    color: #fff;
     font-size: 1em;
     font-weight: 600;
     text-transform: uppercase;
@@ -286,12 +285,12 @@ ul li::before {
     white-space: nowrap;
 }
 
-.button:hover {
+a.button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.button:active {
+a.button:active {
     transform: translateY(1px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -306,31 +305,85 @@ ul li::before {
     border-radius: 1px;
 }
 
+
+column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 10px;
+    white-space: nowrap;
+}
+
+.big-button {
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 6px;
+    outline: none;
+    padding: 12px 18px;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: var(--big-btn-bg-color, linear-gradient(135deg, #3498db, #2980b9));
+    white-space: nowrap;
+}
+
+.big-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.big-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.big-button-image {
+    width: 75%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border-radius: 1px;
+}
+
 #markdown-container {
-  max-height:1200px;
-  overflow: hidden;
-  position: relative;
-  transition: max-height 0.4s ease;
+    max-height: 1200px;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.4s ease;
 }
 
 /* Fading effect using a pseudo-element */
 #markdown-container.collapsed::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 60px;
-  width: 100%;
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    pointer-events: none;
 }
 
 /* Expanded state removes height limit and fade */
 #markdown-container.expanded {
-  max-height: none;
+    max-height: none;
 }
 
 #markdown-container.expanded::after {
-  display: none;
+    display: none;
 }
 
 #markdown-container img {
@@ -344,6 +397,7 @@ ul li::before {
 
 
 #markdown-container.collapsed {
-  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
+
