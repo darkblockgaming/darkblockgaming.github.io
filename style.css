@@ -189,6 +189,7 @@ main {
     color: var(--accent);
     margin-top: 0;
     text-align: center;
+    text-decoration: none;
 }
 
 .section .thumbnails {
@@ -401,3 +402,41 @@ column {
     -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
+.gallery-container {
+    background-color: #2d002d;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    overflow: hidden;
+    transition: background-color 0.4s;
+}
+
+.light-mode .gallery-container {
+    background-color: #ffffff;
+    border: 1px solid #e0cce8;
+}
+
+.scroll-wrapper {
+    display: flex;
+    gap: 10px;
+    animation: scrollGallery 40s linear infinite;
+    width: max-content;
+}
+
+.gallery-item {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 7px;
+}
+
+@keyframes scrollGallery {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
