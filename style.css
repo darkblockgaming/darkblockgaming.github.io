@@ -212,6 +212,8 @@ main {
 
 .section .mainPara {
     text-align: center;
+    text-decoration: none !important;
+    color: inherit !important;
 }
 
 .section .tinyNote {
@@ -304,17 +306,6 @@ a.button:active {
     margin: 0;
     padding: 0;
     border-radius: 1px;
-}
-
-
-column {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    row-gap: 10px;
-    white-space: nowrap;
 }
 
 .big-button {
