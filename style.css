@@ -267,6 +267,37 @@ ul li::before {
     white-space: nowrap;
 }
 
+.realbutton {
+    width: auto;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    outline: none;
+    justify-content: center;
+    padding: 12px 18px;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: var(--btn-bg-color, linear-gradient(135deg, #3498db, #2980b9));
+    white-space: nowrap;
+}
+
+.realbutton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.realbutton:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 a.button {
     width: auto;
     z-index: 1;
