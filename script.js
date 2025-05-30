@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-//Markdown
+//Md
 
 const btn = document.getElementById('toggle-md');
 const container = document.getElementById('markdown-container');
