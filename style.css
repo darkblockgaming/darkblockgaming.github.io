@@ -179,6 +179,20 @@ main {
     transition: background-color 0.4s;
 }
 
+.section .advert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    margin: 24px auto;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
 .light-mode .section {
     background-color: #ffffff;
     border: 1px solid #e0cce8;
