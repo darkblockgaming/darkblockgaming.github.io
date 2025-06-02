@@ -2,7 +2,7 @@
 ---
 
 <p align="center">
-  <img src="https://darkblockgaming.github.io/assets/HoleFillerAddon/title-logo.png" />
+  <img src="https://darkblockgaming.github.io/assets/holefilleraddon/title-logo.png" />
 </p>
 
 
