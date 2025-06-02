@@ -65,16 +65,3 @@ The idea for this add-on is inspired by a famous java mod called Hole Filler mod
 
 ### If you enjoy this project and would like to support its development—or simply show your appreciation with a donation—we’d be truly grateful. [Donate now...](https://darkblockgaming.github.io/donate-me/)
 
----
-
-## **Download & Support Me!**
-
-## Direct download is available but if you want to support me, you can download from here:
-
-# [Download & Support Me](https://darkblockgaming.github.io/addons/hole-filler-addon/)
-
-## Feel free to directly download, but if you like it feel free to donate & support me:
-
-# [Donate Here](https://darkblockgaming.github.io/donate-me/)
-
-
