@@ -5,7 +5,6 @@
   <img src="https://darkblockgaming.github.io/assets/holefilleraddon/title-logo.png" />
 </p>
 
-
 <p align="center">
 The <b>Hole Filler Add-on</b> introduces a new item to Minecraft Bedrock Edition designed to instantly fill in holes created by TNT blasts, creeper explosions, and other destruction. Simply throw the Hole Filler item into any crater, and it will quickly fill the space with blocks.
 </p>
