@@ -1,3 +1,83 @@
+<span>This is the best resource pack, If you want to make custom 3D Totem of undying using your Minecraft skin.</span>
+
+All you need to do is just put your skin inside the resource pack & choose settings according to your skin type and it's done.
+
+It is extremely easy (all steps are given below)
+
+ 
+
+This addon works for both types of skin models (skin types)
+
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_2.jpeg)
+
+<h2 style="text-align:center">__\*\*Screenshots (With few different skins)\*\*__</h2>
+
+**With Default Steve Skin**
+
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_3.jpeg)  
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_4.jpeg)  
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_5.jpeg)
+
+ 
+
+**With Default Alex Skin**
+
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_6.jpeg)  
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_7.jpeg)  
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_8.jpeg)
+
+ 
+
+**With My Custom Skin**
+
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_9.jpeg)  
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_10.jpeg)  
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_11.jpeg)
+
+ <h2 style="text-align:center">__**How to add your custom skin**__</h2> undefined
+
+*   Just make a copy of your skin
+*   Rename it "dbg.png"
+*   And put that skin inside the resource pack \[textures/darkblock\_gaming\]
+
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_12.jpeg)
+
+*   (Optional) You can also choose a icon for totem  
+    Take a 16×16 image for icon  
+    Rename it "totem.png"  
+    Put it inside the resource pack \[textures/items\]
+*   This is optional (you can delete totem.png to get vanilla totem icon)
+
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_13.jpeg)Now activate resource pack, and click on it, and then click on this gear/settings icon
+
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_14.jpeg)
+
+*   Now select your skin model type, Minecraft has two types of skin types \[Thick & Thin\]
+
+![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_15.jpeg)
+
+***
+
+## **Download & Support Me!**
+
+## Direct download is available but if you want to support me, you can download from here:
+
+# [Download & Support Me](https://darkblockgaming.github.io/addons/custom-3d-totem/)
+
+## Feel free to directly download, but if you like it feel free to donate & support me:
+
+# [Donate Here](https://darkblockgaming.github.io/donate-me/)
+
+**Try it, share it, and explore Minecraft from a whole new angle!**
+
+
+
+
+
+
+
+
+
 
 ---
 
