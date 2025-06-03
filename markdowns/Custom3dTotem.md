@@ -82,7 +82,7 @@ This addon works for both types of skin models (skin types)
 ---
 
 <p align="center">
-  <img src="https://darkblockgaming.github.io/assets/holefilleraddon/title-logo.png" />
+  <img src="../assets/custom3dtotem/title-logo.png" />
 </p>
 
 <p align="center">
@@ -112,7 +112,7 @@ Alot has been changed, added and improved in this update. Following listed are f
 
 ---
 
-## 📚 Hole Filler Add-on Documentation
+## 📚 Custom 3D Totem Documentation
 
 After installing and activating the **Hole Filler** add-on you must type **`?hf`** in the chat. This step is very important and this will give you the tools or items needed to use and customise the add-on.
 
