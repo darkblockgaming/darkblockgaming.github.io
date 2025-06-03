@@ -1,138 +1,95 @@
-<span>This is the best resource pack, If you want to make custom 3D Totem of undying using your Minecraft skin.</span>
-
-All you need to do is just put your skin inside the resource pack & choose settings according to your skin type and it's done.
-
-It is extremely easy (all steps are given below)
-
- 
-
-This addon works for both types of skin models (skin types)
-
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_2.jpeg)
-
-<h2 style="text-align:center">__\*\*Screenshots (With few different skins)\*\*__</h2>
-
-**With Default Steve Skin**
-
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_3.jpeg)  
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_4.jpeg)  
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_5.jpeg)
-
- 
-
-**With Default Alex Skin**
-
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_6.jpeg)  
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_7.jpeg)  
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_8.jpeg)
-
- 
-
-**With My Custom Skin**
-
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_9.jpeg)  
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_10.jpeg)  
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_11.jpeg)
-
- <h2 style="text-align:center">__**How to add your custom skin**__</h2> undefined
-
-*   Just make a copy of your skin
-*   Rename it "dbg.png"
-*   And put that skin inside the resource pack \[textures/darkblock\_gaming\]
-
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_12.jpeg)
-
-*   (Optional) You can also choose a icon for totem  
-    Take a 16×16 image for icon  
-    Rename it "totem.png"  
-    Put it inside the resource pack \[textures/items\]
-*   This is optional (you can delete totem.png to get vanilla totem icon)
-
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_13.jpeg)Now activate resource pack, and click on it, and then click on this gear/settings icon
-
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_14.jpeg)
-
-*   Now select your skin model type, Minecraft has two types of skin types \[Thick & Thin\]
-
-![](https://api.mcpedl.com/storage/submissions/196036/images/3d-totem-from-custom-skin_15.jpeg)
-
-***
-
-## **Download & Support Me!**
-
-## Direct download is available but if you want to support me, you can download from here:
-
-# [Download & Support Me](https://darkblockgaming.github.io/addons/custom-3d-totem/)
-
-## Feel free to directly download, but if you like it feel free to donate & support me:
-
-# [Donate Here](https://darkblockgaming.github.io/donate-me/)
-
-**Try it, share it, and explore Minecraft from a whole new angle!**
-
-
-
-
-
-
-
-
-
 
 ---
 
 <p align="center">
-  <img src="../assets/custom3dtotem/title-logo.png" />
+  <img src="https://darkblockgaming.github.io/assets/custom3dtotem/title-logo.png"/>
 </p>
 
-<p align="center">
-The <b>Hole Filler Add-on</b> introduces a new item to Minecraft Bedrock Edition designed to instantly fill in holes created by TNT blasts, creeper explosions, and other destruction. Simply throw the Hole Filler item into any crater, and it will quickly fill the space with blocks.
+<p>
+The <b>Custom 3D Totem</b> is the best resource pack, If you want to make custom 3D Totem of undying using your Minecraft skin.
+
+This resource pack makes a 3D miniature version of player, which looks much better.
+
+It is extremely easy (all steps are given below):
+All you need to do is just put your skin inside the resource pack & choose settings according to your skin type and it's done, This addon works for both types of skin models (skin types).
 </p>
 
 ---
 
-## ⬇️ 1.2.0 Changelog
-Alot has been changed, added and improved in this update. Following listed are few key changes:
-
-- The ability to choose what block to fill,
-- A lot of improvements regarding data saving and how how filling initiated by different players gets handeled,
-- Several players have reported that the they only get one hole filling item, which now has been fixe and you can simply keep typing ?hf in the chat and it will automatically detect which item you need and it will be given to you,
-- Fixed an bug in which filling a hole closer to the botton of the world such as in flat worlds caused some issues,
-- Much more has been chmaged some of that is more technical and I am little lazy to write it here as well, so I hope you will try this and found out by yourself........
+## Screenshots
 
 ---
 
 ## ✅ Installation
 
-1. [Download](https://darkblockgaming.github.io/addons/hole-filler-addon/) the latest **Hole Filler Add-on `.mcpack`** file.  
-2. Open the file with **Minecraft Bedrock Edition** to install the add-on.  
-3. In your world settings, enable **Experimental Features**, including:  
-   - **Beta APIs**  
-4. Make sure the **Behavior Pack** is applied to your world.
+1. [Download](https://darkblockgaming.github.io/addons/custom-3d-totem/) the latest **Custom 3D Totem`.mcpack`** file.
+2. After you download the pack you can either:
+   - import it in minecraft and then add your skin (if you are in PC)
+   - or you add your skin then import the pack (if you are on mobile or similar)
+3. Steps for adding skins are mentioned below.
+4. Make sure the **Resource Pack** is applied to your world or Global resources.
 
 ---
 
 ## 📚 Custom 3D Totem Documentation
 
-After installing and activating the **Hole Filler** add-on you must type **`?hf`** in the chat. This step is very important and this will give you the tools or items needed to use and customise the add-on.
+After downloading the pack as mentioned in the installation section, if you are on PC (Window or Linux) import the pack then add your skin.
 
-More spesifically you will get two items, `Hole FIller` and `Hole Filling Setting`. Simply throw the Hole Filler item into any crater, and it will quickly fill the space with blocks.
+Or if you are on Mobile (Android or iOS) first add your skin in the pack then import it in minecraft.
 
-![](https://darkblockgaming.github.io/assets/holefilleraddon/hf2.gif)
+### 1. For PC
+So just import the mcpack directly into Minecraft, after don't activate it in anof your worlds instead follow the steps below and add your skin:
 
-![](https://darkblockgaming.github.io/assets/holefilleraddon/hf.gif)
+(this is specifically for windows, for linux it is similar.)
+Go to this location `C:\Users\<username>\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_packs`
 
-This add-on offers extensive customization options,
--  multiple animations for the filling process, allowing you to choose your favorite style.
-- ability to customise the hole filling time or speed.
-- this add-on will automatically detect which block to fill, but you can also select any specific block you wanna fill.
+Here you will all of your resource packs, open the folder for this pack 
+![](../assets/custom3dtotem/screenshots/ss1.png)
 
-![](https://darkblockgaming.github.io/assets/holefilleraddon/hole-filler-addon_3.jpeg)
+So just take your minecraft skin, rename it `3dtotem.png` and put this inside the pack.
 
-Note: The hole-filling logic may contain some bugs. Please report any issues you encounter, and if this pack receives your support, I’ll work to improve the logic further!
+Inside here you will see a `subpacks` folder,
+![](../assets/custom3dtotem/screenshots/ss2.png)
 
-The idea for this add-on is inspired by a famous java mod called Hole Filler mod!
+So there are two types of skin or player models in skin (Steve type and Alex type), so depending on your skin type choose the specific folder
+![](../assets/custom3dtotem/screenshots/ss3.png)
 
+Inside there you will find a textures folder
+![](../assets/custom3dtotem/screenshots/ss4.png)
+
+And inside there you will find an fodler named skin_for_totem
+![](../assets/custom3dtotem/screenshots/ss5.png)
+
+Just put your `3dtotem.png` named skin here
+![](../assets/custom3dtotem/screenshots/ss6.png)
+
+### 2. For Mobile
+(this is specifically for Android, for iOS it's similar)
+
+Before importing the pack, download an app that allows you to manage zip and unzip files. For example I'm using an app called Zarchiver.
+
+So just locate the `mcpack` file you downloaded,
+![](../assets/custom3dtotem/screenshots/ss1b.png)
+
+Click on it and extract/unzip it,
+![](../assets/custom3dtotem/screenshots/ss2b.png)
+
+You will get a folder that contains the whole pack,
+![](../assets/custom3dtotem/screenshots/ss3b.png)
+
+So just take your skin and rename it `3dtotem.png` and put it inside
+`subpacks/<thick or thin skin>/textures/skin_for_totem`,
+![](../assets/custom3dtotem/screenshots/ss4b.png)
+
+Now come backand select the fodler that we got when we extracted, because now we have added our skin in it.
+
+So select it and compress it into `.zip` format
+![](../assets/custom3dtotem/screenshots/ss5b.gif)
+
+Now click on the zip file and rename it and remove the `.zip` and add `.mcpack`
+![](../assets/custom3dtotem/screenshots/ss6b.gif)
+
+#### Now the pack is ready with your skin, enjoy it.
 
 ---
 
@@ -144,4 +101,16 @@ The idea for this add-on is inspired by a famous java mod called Hole Filler mod
 ## 💸 Donate/Sponsor 
 
 ### If you enjoy this project and would like to support its development—or simply show your appreciation with a donation—we’d be truly grateful. [Donate now...](https://darkblockgaming.github.io/donate-me/)
+
+---
+
+## **Download & Support Me!**
+
+## Direct download is available but if you want to support me, you can download from here:
+
+# [Download & Support Me](https://darkblockgaming.github.io/addons/custom-3d-totem/)
+
+## Feel free to directly download, but if you like it feel free to donate & support me:
+
+# [Donate Here](https://darkblockgaming.github.io/donate-me/)
 
