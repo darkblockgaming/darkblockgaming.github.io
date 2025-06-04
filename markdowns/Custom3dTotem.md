@@ -17,7 +17,10 @@ All you need to do is just put your skin inside the resource pack & choose setti
 ---
 
 ## Screenshots
+### Steve skin (Example)
+![](../assets/custom3dtotem/screenshots/sss2.png)
 
+![](../assets/custom3dtotem/screenshots/sss1.png)
 ---
 
 ## ✅ Installation
