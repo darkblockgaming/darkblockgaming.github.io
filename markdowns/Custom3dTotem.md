@@ -105,15 +105,4 @@ Now click on the zip file and rename it and remove the `.zip` and add `.mcpack`
 
 ### If you enjoy this project and would like to support its development—or simply show your appreciation with a donation—we’d be truly grateful. [Donate now...](https://darkblockgaming.github.io/donate-me/)
 
----
-
-## **Download & Support Me!**
-
-## Direct download is available but if you want to support me, you can download from here:
-
-# [Download & Support Me](https://darkblockgaming.github.io/addons/custom-3d-totem/)
-
-## Feel free to directly download, but if you like it feel free to donate & support me:
-
-# [Donate Here](https://darkblockgaming.github.io/donate-me/)
 
