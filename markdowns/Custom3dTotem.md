@@ -18,9 +18,9 @@ All you need to do is just put your skin inside the resource pack & choose setti
 
 ## Screenshots
 ### Steve skin (Example)
-![](../assets/custom3dtotem/screenshots/sss2.png)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/sss2.png)
 
-![](../assets/custom3dtotem/screenshots/sss1.png)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/sss1.png)
 ---
 
 ## ✅ Installation
@@ -47,24 +47,24 @@ So just import the mcpack directly into Minecraft, after don't activate it in an
 Go to this location `C:\Users\<username>\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_packs`
 
 Here you will all of your resource packs, open the folder for this pack 
-![](../assets/custom3dtotem/screenshots/ss1.png)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/ss1.png)
 
 So just take your minecraft skin, rename it `3dtotem.png` and put this inside the pack.
 
 Inside here you will see a `subpacks` folder,
-![](../assets/custom3dtotem/screenshots/ss2.png)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/ss2.png)
 
 So there are two types of skin or player models in skin (Steve type and Alex type), so depending on your skin type choose the specific folder
-![](../assets/custom3dtotem/screenshots/ss3.png)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/ss3.png)
 
 Inside there you will find a textures folder
-![](../assets/custom3dtotem/screenshots/ss4.png)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/ss4.png)
 
 And inside there you will find an fodler named skin_for_totem
-![](../assets/custom3dtotem/screenshots/ss5.png)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/ss5.png)
 
 Just put your `3dtotem.png` named skin here
-![](../assets/custom3dtotem/screenshots/ss6.png)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/ss6.png)
 
 ### 2. For Mobile
 (this is specifically for Android, for iOS it's similar)
@@ -72,25 +72,25 @@ Just put your `3dtotem.png` named skin here
 Before importing the pack, download an app that allows you to manage zip and unzip files. For example I'm using an app called Zarchiver.
 
 So just locate the `mcpack` file you downloaded,
-![](../assets/custom3dtotem/screenshots/ss1b.png)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/ss1b.png)
 
 Click on it and extract/unzip it,
-![](../assets/custom3dtotem/screenshots/ss2b.png)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/ss2b.png)
 
 You will get a folder that contains the whole pack,
-![](../assets/custom3dtotem/screenshots/ss3b.png)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/ss3b.png)
 
 So just take your skin and rename it `3dtotem.png` and put it inside
 `subpacks/<thick or thin skin>/textures/skin_for_totem`,
-![](../assets/custom3dtotem/screenshots/ss4b.png)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/ss4b.png)
 
 Now come backand select the fodler that we got when we extracted, because now we have added our skin in it.
 
 So select it and compress it into `.zip` format
-![](../assets/custom3dtotem/screenshots/ss5b.gif)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/ss5b.gif)
 
 Now click on the zip file and rename it and remove the `.zip` and add `.mcpack`
-![](../assets/custom3dtotem/screenshots/ss6b.gif)
+![](https://darkblockgaming.github.io/assets/custom3dtotem/screenshots/ss6b.gif)
 
 #### Now the pack is ready with your skin, enjoy it.
 
