@@ -11,6 +11,9 @@ The <b>Hole Filler Add-on</b> introduces a new item to Minecraft Bedrock Edition
 
 ---
 
+## ⬇️ 1.3.0 Changelog
+- Support for Minecraft 1.21.90
+
 ## ⬇️ 1.2.0 Changelog
 Alot has been changed, added and improved in this update. Following listed are few key changes:
 
