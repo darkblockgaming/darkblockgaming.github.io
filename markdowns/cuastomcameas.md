@@ -37,17 +37,17 @@ After installing and activating the **Custom Cameras** add-on you must type **`?
 
 After this you will get an stick that you can use to open and navigate through different menus of this add-on, you will be able to create different cameras, name them, use them, customise them, and much more!!
 
-![](../assets/customcameras/screenshots/1.png)
-![](../assets/customcameras/screenshots/2.png)
-![](../assets/customcameras/screenshots/3.png)
-![](../assets/customcameras/screenshots/4.png)
-![](../assets/customcameras/screenshots/5.png)
-![](../assets/customcameras/screenshots/6.png)
-![](../assets/customcameras/screenshots/7.png)
-![](../assets/customcameras/screenshots/8.png)
-![](../assets/customcameras/screenshots/9.png)
-![](../assets/customcameras/screenshots/10.png)
-![](../assets/customcameras/screenshots/11.png)
+![](https://darkblockgaming.github.io/assets/customcameras/screenshots/1.png)
+![](https://darkblockgaming.github.io/assets/customcameras/screenshots/2.png)
+![](https://darkblockgaming.github.io/assets/customcameras/screenshots/3.png)
+![](https://darkblockgaming.github.io/assets/customcameras/screenshots/4.png)
+![](https://darkblockgaming.github.io/assets/customcameras/screenshots/5.png)
+![](https://darkblockgaming.github.io/assets/customcameras/screenshots/6.png)
+![](https://darkblockgaming.github.io/assets/customcameras/screenshots/7.png)
+![](https://darkblockgaming.github.io/assets/customcameras/screenshots/8.png)
+![](https://darkblockgaming.github.io/assets/customcameras/screenshots/9.png)
+![](https://darkblockgaming.github.io/assets/customcameras/screenshots/10.png)
+![](https://darkblockgaming.github.io/assets/customcameras/screenshots/11.png)
 
 ---
 
