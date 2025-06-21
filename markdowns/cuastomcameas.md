@@ -17,6 +17,7 @@ limitations—just pure visual freedom.</p>
 ---
 
 ## ⬇️ 1.0.0 Changelog
+- First Version.
 
 ---
 
@@ -34,21 +35,19 @@ limitations—just pure visual freedom.</p>
 
 After installing and activating the **Custom Cameras** add-on you must type **`?cc`** in the chat. This step is very important and this will give you the tools or items needed to use and customise the add-on.
 
-![](https://darkblockgaming.github.io/assets/holefilleraddon/hf2.gif)
+After this you will get an stick that you can use to open and navigate through different menus of this add-on, you will be able to create different cameras, name them, use them, customise them, and much more!!
 
-![](https://darkblockgaming.github.io/assets/holefilleraddon/hf.gif)
-
-This add-on offers extensive customization options,
-
-- multiple animations for the filling process, allowing you to choose your favorite style.
-- ability to customise the hole filling time or speed.
-- this add-on will automatically detect which block to fill, but you can also select any specific block you wanna fill.
-
-![](https://darkblockgaming.github.io/assets/holefilleraddon/hole-filler-addon_3.jpeg)
-
-Note: The hole-filling logic may contain some bugs. Please report any issues you encounter, and if this pack receives your support, I’ll work to improve the logic further!
-
-The idea for this add-on is inspired by a famous java mod called Hole Filler mod!
+![](../assets/customcameras/screenshots/1.png)
+![](../assets/customcameras/screenshots/2.png)
+![](../assets/customcameras/screenshots/3.png)
+![](../assets/customcameras/screenshots/4.png)
+![](../assets/customcameras/screenshots/5.png)
+![](../assets/customcameras/screenshots/6.png)
+![](../assets/customcameras/screenshots/7.png)
+![](../assets/customcameras/screenshots/8.png)
+![](../assets/customcameras/screenshots/9.png)
+![](../assets/customcameras/screenshots/10.png)
+![](../assets/customcameras/screenshots/11.png)
 
 ---
 
